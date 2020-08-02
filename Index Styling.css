@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: inherit;
+    /* background: -webkit-linear-gradient(-92deg, rgb(215, 215, 215), rgb(189, 189, 189));
+    background: linear-gradient(-92deg, rgb(215, 215, 215), rgb(189, 189, 189)); */
+	/*Styling*/
+	font-family: "SF Pro Display", "SF Pro Text";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Top Nav Bar */
+
+#navbar {
+	/*Nav Bar*/
+	margin-top: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0px -10px 50px 15px hsla(0,0%,0%,0.35);
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .social {
+	padding-top: 60px; 
+}
+
+/* Zander Title */
+
+.active {
+	float: left;
+	text-align: center;
+	color: black;
+	padding: 5px;
+	font-size: 33px;
+	font-weight: 800;
+	text-decoration: none;
+	transition: 0.1s ease;
+	text-shadow: 0px 0px 20px hsla(0,0%,0%,0.2);
+	
+}
+
+.active:hover {
+	color: white;
+	text-shadow: 1px 1px red;
+	text-shadow: 0px 0px 5px black;
+	transition: 0.1s ease;
+}
+
+/* Dropdown Menu */
+
+.dropmenu {
+	float: left;
+	overflow: hidden;
+	
+}
+
+/* Button */
+
+.menu {
+	font-size: 25px;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 10px 10px 18px 10px;
+	background-color: inherit;
+	font-family: inherit;
+	transition: 0.1s ease;
+	margin-top: auto;
+	margin: 0;
+}
+
+.menu:hover {
+	background-color: black;
+	color: white;
+}
+
+/* Pages */
+
+.dropmenu-content {
+	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 	z-index: 1;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.dropmenu-content a {
+	display: block;
+	float: none;
+	padding: 14px;
+	color: black;
+	font-size: 22px;
+	font-weight: 800;
+	font-family: inherit;
+	text-decoration: none;
+	text-align: left;
+	text-shadow: 0px 0px 20px hsla(0,0%,0%,0.35);
+}
+
+.btmlink:hover {
+	border-radius: inherit;
+}
+
+.dropmenu-content a:hover {
+	color: white;
+	transition: 0.1s ease;
+	background-color: black;
+	
+}
+
+.dropmenu:hover .dropmenu-content {
+	display: block;
+	box-shadow: 0px 0px 50px 15px hsla(0,0%,0%,0.35);
+}
+
+/* Search Bar */
+
+#navbar input[type=text] {
+	float: right;
+	padding: 6px;
+	border: 2px solid black;
+	margin-top: 10px;
+	margin-right: 16px;
+	margin-bottom: 10px;
+	font-family: "SF Pro Display", "SF Pro Text";
+	font-size: 18px;
+	font-weight: 700;
+	background-color: #e8e8e8;
+	padding-right: 45px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px 1px hsla(0,0%,0%,0.25);
+}
+
+.search-button button {
+	float: right;
+	padding: 8px 12px;
+	margin-top: 10px;
+	margin-right: -275px;
+	background: none;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.search-button button:hover {
+	color: black;
+	background-color: white;
+	transition: 0.1s ease;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav .search-container {
+		float: none;
+	}
+	.topnav a, .topnav input[type=text], .topnav .search-container button {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+}
+	.topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Social Media */
+
+.social {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social a {
+	position: relative;
+	overflow: hidden;
+	left: 50%; 
+  	text-align: center;
+  	transition: all 0.3s ease;
+  	color: black;
+  	font-size: 50px;
+	text-decoration: none;
+}
+
+
+.social a:hover {
+  box-shadow: 0px 0px 10px red;
+}
+
+/* Title */
+
+h1{
+	float: inherit;
+	color: hsla(52,100%,50%,1.00);
+	text-align: center;
+	padding-top: 20px; 
+	font-size: 70px;
+	text-shadow: 0px 0px 15px hsla(0,0%,0%,0.50);
+}
+
+/* Photos */
+
+.photos {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.images {
+	flex: 50%;
+	padding: 0 4px;
+	
+}
+
+.images img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	box-shadow: 0px 0px 10px 1px hsla(0,0%,0%,0.25);
+}
+
+@media screen and (max-width: 6000px) {
+	.images {
+		flex: 32%;
+		max-width: 33.33%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.images {
+		flex: 48%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.images {
+		flex: 99%;
+		max-width: 100%;
+	}
+}
