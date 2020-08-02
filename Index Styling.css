@@ -44,10 +44,10 @@ body{
 }
 
 .active:hover {
-	color: white;
 	text-shadow: 1px 1px red;
-	text-shadow: 0px 0px 5px black;
-	transition: 0.1s ease;
+	text-shadow: 0px 0px 10px hsla(0,0%,0%,0.4);
+	transition: 0.2s ease;
+    transform: scale(1.05);
 }
 
 /* Dropdown Menu */
@@ -82,7 +82,7 @@ body{
 
 .dropmenu-content {
 	display: none;
-  	position: absolute;
+  	position: fixed;
   	background-color: #f9f9f9;
   	min-width: 160px;
   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -128,7 +128,7 @@ body{
 	margin-left: 1px;
 	z-index: 1;
   	text-align: center;
-  	transition: all 0.3s ease;
+  	transition: 0.1s ease;
   	color: white;
   	font-size: 45px;
 	text-decoration: none;
@@ -136,7 +136,7 @@ body{
 
 
 #social a:hover {
-	color: white;
+    font-size: 50px;
 }
 
 /* Search Bar */
