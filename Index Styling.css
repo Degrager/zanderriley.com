@@ -300,7 +300,7 @@ h2{
 .forest{
 	background-image: url("Photos/BigSur.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -250px;
+    background-position: 0 -170px;
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
@@ -310,28 +310,37 @@ h2{
     display: inline-block;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 705px) {
+    h1 {
+        font-size: 10.2vw;
+        padding-top: 18.5vw;
+    }
+    h2 {
+        font-size: 3.4vw;
+        padding-bottom: 18.5vw;
+    }
 }
 @media screen and (max-width: 414px) {
 }
 
 /* Photos */
 .tcphotos {
-    margin: auto;
+    overflow: hidden;
     border: none;
+    margin: auto;
     background-color: white;
-    max-width: 1300px;
-
+    max-width: 1000px;
+    min-width: 600px;
 }
 .images-title {
     white-space: nowrap;
-    display: inline-flex;
-    overflow: hidden;
-    padding-top: 55px;
+    padding-top: 40px;
+    padding-left: 10px;
     text-align: left;
     color: white;
-    font-size: 6vw;
+    font-size: 95px;
     font-weight: bolder;
+    /* Color */
     background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
     background-size: 1600% 1600%;
     -webkit-animation: AnimationName 16s ease infinite;
@@ -340,29 +349,47 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.images-subtitle {
-    padding: 0px 3px 30px 10px;
+.images-info {
+    display: block;
+    overflow: hidden;
+    padding-left: 10px;
     text-align: left;
     color: black;
-    font-size: 1.5vw;
+    font-size: 28.7px;
     font-weight: bold;
+    margin: 8px 0px 20px 20px;
 }
 .images {
     justify-content: center;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 31.8% 31.8% 31.8%;
-    grid-template-rows: auto;
+    grid-template-columns: 30% 30% 30%;
 }
 .images img {
     justify-items: center;
 	width: 100%;
-	box-shadow: 0px 0px 10px 3px hsla(0,0%,0%,0.2);
+	box-shadow:
+  0 0.4px 1px rgba(0, 0, 0, 0.062),
+  0 0.9px 2.3px rgba(0, 0, 0, 0.089),
+  0 1.8px 4.4px rgba(0, 0, 0, 0.11),
+  0 3.1px 7.8px rgba(0, 0, 0, 0.131),
+  0 5.8px 14.6px rgba(0, 0, 0, 0.158),
+  0 14px 35px rgba(0, 0, 0, 0.22);
+
+
+
+
 }
-@media screen and (max-width: 6000px) {
-	.images {
-		
+@media screen and (max-width: 960px) {
+    .tcphotos {
+        max-width: 960px;
+    }
+	.images-title {
+		font-size: 9.9vw;
 	}
+    .images-info {
+        font-size: 3vw;
+    }
 }
 @media screen and (max-width: 900px) {
     
