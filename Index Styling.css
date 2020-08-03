@@ -98,7 +98,7 @@ body{
     vertical-align: middle;
 	text-align: center;
 	color: black;
-	padding: 4px 6px 4px 0px;
+	padding: 4px 8px 4px 6px;
 	font-size: 33px;
 	font-weight: 800;
 	text-decoration: none;
@@ -304,7 +304,24 @@ h2{
         padding-bottom: 18.5vw;
     }
 }
-@media screen and (max-width: 414px) {
+
+.projects-title {
+    white-space: nowrap;
+    padding-top: 40px;
+    padding-left: 12px;
+    text-align: left;
+    color: white;
+    font-size: 125px;
+    font-weight: bolder;
+    text-decoration: underline;
+    /* Color */
+    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
+    background-size: 1600% 1600%;
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Photos */
@@ -316,20 +333,24 @@ h2{
     max-width: 1000px;
     height: 50%;
 }
+.emoji{
+    font-size: 5px;
+    width: 80px;
+}
 .images-title {
     white-space: nowrap;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 12px;
     text-align: left;
     color: white;
-    font-size: 95px;
+    font-size: 90px;
     font-weight: bolder;
     /* Color */
-    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
-    background-size: 1600% 1600%;
-    -webkit-animation: AnimationName 16s ease infinite;
-    -moz-animation: AnimationName 16s ease infinite;
-    animation: AnimationName 16s ease infinite;
+    background: linear-gradient(160deg, #44c98d, #078fbd, #ffd57c);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -365,7 +386,7 @@ h2{
         max-width: 960px;
     }
 	.images-title {
-		font-size: 9.9vw;
+		font-size: 9.38vw;
 	}
     .images-info {
         font-size: 3vw;
