@@ -62,8 +62,8 @@ body{
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
+    height: 100%
 } 
-  
 @keyframes fadeInAnimation { 
     0% { 
         opacity: 0; 
@@ -91,14 +91,13 @@ body{
 	}
 }
 
-
 /* Zander Title */
 .active {
 	float: left;
     vertical-align: middle;
 	text-align: center;
 	color: black;
-	padding: 4px 8px 4px 6px;
+    padding: 4px 0px 4px 0px;
 	font-size: 33px;
 	font-weight: 800;
 	text-decoration: none;
@@ -193,9 +192,11 @@ body{
 
 /* Social Media */
 #social{
+    float: right;
+	border: none;
 }
 #social a {
-	margin: 6px 0px 0px 8px;
+	margin: 6px 10px 0px 0px;
     display: inline-block;
 	z-index: 1;
   	transition: 0.1s ease;
@@ -224,42 +225,6 @@ body{
 }
 
 /* Search Bar */
-#navbar input[type=text] {
-    z-index: 0;
-    float: right;
-    display: block;
-	border: 2px solid black;
-    margin: 6px 60px 0px 0px;
-    padding: 6px 0px 6px 0px;
-	font-family: "SF Pro Display", "SF Pro Text";
-	font-size: 18px;
-	font-weight: 700;
-	background-color: #e8e8e8;
-	border-radius: 6px;
-	box-shadow: 0px 0px 10px 0.5px hsla(0,0%,0%,0.25);
-}
-#search {
-    position: fixed;
-    z-index: 1;
-    background-color: black;
-    padding: 8px 12px;
-    margin: 5px 0px 0px 220px;
-    border: 2px solid black;
-    border-radius: 0px 6px 6px 0px;
-    color: white;
-}
-.search-button button {
-    display: block;
-	float: right;
-	font-size: 17px;
-	border: none;
-	cursor: pointer;
-}
-#search:hover {
-	color: black;
-	background-color: white;
-	transition: 0.1s ease;
-}
 @media screen and (max-width: 692px) {
     .search-button button {
     visibility: hidden;
@@ -284,7 +249,7 @@ h2{
 .bigsur{
 	background-image: url("Photos/BigSur.jpg");
     background-repeat: repeat-y;
-    background-position: 0 -170px;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
@@ -293,7 +258,6 @@ h2{
     bottom: 0;
     display: inline-block;
 }
-
 @media screen and (max-width: 705px) {
     h1 {
         font-size: 10.2vw;
@@ -304,47 +268,56 @@ h2{
         padding-bottom: 18.5vw;
     }
 }
-
 .projects-title {
     white-space: nowrap;
-    padding-top: 40px;
-    padding-left: 12px;
-    text-align: left;
+    padding-top: 20px;
+    text-align: center;
+}
+.projects-title a{
     color: white;
-    font-size: 125px;
-    font-weight: bolder;
-    text-decoration: underline;
+    font-size: 100px;
+    font-weight: 900;
+    text-decoration: underline ;
     /* Color */
-    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
+    background: linear-gradient(270deg, #e64736, #e1852d, #eee67e, #85e64e, #4ee6b8, #4e9be6, #664ee6, #e64e9d);
     background-size: 1600% 1600%;
-    -webkit-animation: AnimationName 16s ease infinite;
-    -moz-animation: AnimationName 16s ease infinite;
-    animation: AnimationName 16s ease infinite;
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+@media screen and (max-width: 560px){
+    .projects-title a {
+        font-size: 17.9vw;
+    }
+}
+@media screen and (max-width: 410px){
+    .active {
+        padding-top: 8px;
+        font-size: 7vw;
+    }
+}
 /* Photos */
 .tcphotos {
     overflow: hidden;
     border: none;
     margin: auto;
     background-color: transparent;
-    max-width: 1000px;
-    height: 50%;
+    max-width: 1500px;
 }
-.emoji{
+.emoji {
     font-size: 5px;
-    width: 80px;
+    width: 77px;
 }
 .images-title {
     white-space: nowrap;
     padding-top: 80px;
-    padding-left: 12px;
+    padding-left: 40px;
     text-align: left;
     color: white;
-    font-size: 90px;
-    font-weight: bolder;
+    font-size: 83.5px;
+    font-weight: 700;
     /* Color */
     background: linear-gradient(160deg, #44c98d, #078fbd, #ffd57c);
     background-size: 600% 600%;
@@ -357,39 +330,44 @@ h2{
 .images-info {
     display: block;
     overflow: hidden;
-    padding-left: 10px;
+    padding-left: 32px;
     text-align: left;
     color: black;
     font-size: 28.7px;
-    font-weight: bold;
+    font-weight: 600;
     margin: 8px 0px 20px 20px;
 }
 .images {
+    height: auto;
+    z-index: 100;
     justify-content: center;
+    align-content: center;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto 30px;
 }
 .images img {
     justify-items: center;
 	width: 100%;
+    height: auto;
 	box-shadow:
-  0 0.4px 1px rgba(0, 0, 0, 0.062),
-  0 0.9px 2.3px rgba(0, 0, 0, 0.089),
-  0 1.8px 4.4px rgba(0, 0, 0, 0.11),
-  0 3.1px 7.8px rgba(0, 0, 0, 0.131),
-  0 5.8px 14.6px rgba(0, 0, 0, 0.158),
-  0 14px 35px rgba(0, 0, 0, 0.22);
+        0px 0px 15px 1px rgba(0,0,0,0.33);
 }
+
 @media screen and (max-width: 960px) {
     .tcphotos {
         max-width: 960px;
     }
 	.images-title {
-		font-size: 9.38vw;
+		font-size: 8.7vw;
+        padding-top: 8vw;
 	}
     .images-info {
         font-size: 3vw;
+    }
+    .emoji {
+        width: 8vw;
     }
 }
 @media screen and (max-width: 640px) {
@@ -401,31 +379,36 @@ h2{
         grid-template-columns: 45% 45%;
     } 
 }
-@media screen and (max-width: 414) {
+@media screen and (max-width: 414px) {
     .tcphotos {
         max-width: 414px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .tcphotos {
+        max-width: 375px;
     }
 }
 
 /* Film */
 .film {
-    overflow: hidden;
+    z-index: 0;
     border: none;
-    margin: auto;
-    background-color: hsla(240,100%,50%,0.00);
+    margin-left: 37px; 
+    margin-top: 0;
     max-width: 1000px;
 }
 .film-title {
+    padding-left: 18px;
     white-space: nowrap;
-    color: white;
     font-size: 95px;
     font-weight: bolder;
     /* Color */
-    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
-    background-size: 1600% 1600%;
-    -webkit-animation: AnimationName 16s ease infinite;
-    -moz-animation: AnimationName 16s ease infinite;
-    animation: AnimationName 16s ease infinite;
+    background: linear-gradient(132deg, #1631c6, #d76d05);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
