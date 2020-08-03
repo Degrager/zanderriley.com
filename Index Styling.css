@@ -6,56 +6,48 @@
   font-weight: 900;
   src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
 }
-
 /** Bold */
 @font-face {
   font-family: "SF Display";
   font-weight: 700;
   src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
 }
-
 /** Heavy */
 @font-face {
   font-family: "SF Display";
   font-weight: 800;
   src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
 }
-
 /** Light */
 @font-face {
   font-family: "SF Display";
   font-weight: 200;
   src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
 }
-
 /** Medium */
 @font-face {
   font-family: "SF Display";
   font-weight: 500;
   src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
 }
-
 /** Regular */
 @font-face {
   font-family: "SF Display";
   font-weight: 400;
   src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
 }
-
 /** Semibold */
 @font-face {
   font-family: "SF Display";
   font-weight: 600;
   src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
 }
-
 /** Thin */
 @font-face {
   font-family: "SF Display";
   font-weight: 300; 
   src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
 }
-
 /** Ultralight */
 @font-face {
   font-family: "SF Display";
@@ -63,21 +55,17 @@
   src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
 }
 
+/* Body */
 body{
 	margin: inherit;
-    background: -webkit-linear-gradient(3deg, rgb(0, 0, 0), rgb(36, 63, 91));
-    background: linear-gradient(3deg, rgb(0, 0, 0), rgb(36, 63, 91));
-	/*Styling*/
-	font-family: "SF Display";
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-    scroll-behavior: smooth;
+    font-family: "SF Display";
+    background-color: red;
 }
 
 /* Top Nav Bar */
-
 #navbar {
 	/*Nav Bar*/
+    z-index: 1;
 	margin-top: 0;
     height: 25%;
 	width: 100%;
@@ -85,7 +73,6 @@ body{
 	background-color: white;
 	box-shadow: 0px -10px 50px 15px hsla(0,0%,0%,0.60);
 }
-
 @media (min-height: 300px) {
 	#navbar {
 		position: sticky;
@@ -93,8 +80,8 @@ body{
 	}
 }
 
-/* Zander Title */
 
+/* Zander Title */
 .active {
 	float: left;
 	text-align: center;
@@ -104,44 +91,38 @@ body{
 	font-weight: 800;
 	text-decoration: none;
 	transition: 0.1s ease;
-	text-shadow: 0px 0px 15px hsla(0,0%,0%,0.30);
-	
+	text-shadow: 0px 0px 5px hsla(0,0%,0%,0.2);
 }
-
 .active:hover {
 	text-shadow: 1px 1px red;
-	text-shadow: 0px 0px 10px hsla(0,0%,0%,0.4);
+	text-shadow: 0px 0px 5px hsla(0,0%,0%,0.1);
 	transition: 0.12s ease;
     transform: scale(1.05);
-    background: linear-gradient(327deg, #0069b8, #ff0000);
-    background-size: 400% 400%;
-
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
+    background-size: 1600% 1600%;
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
 }
 
-
 /* Dropdown Menu */
-
 .dropmenu {
 	float: left;
 	overflow: hidden;
@@ -149,7 +130,6 @@ body{
 }
 
 /* Button */
-
 .menu {
 	font-size: 25px;
 	border: none;
@@ -162,14 +142,12 @@ body{
 	margin-top: auto;
 	margin: 0;
 }
-
 .menu:hover {
 	background-color: black;
 	color: white;
 }
 
 /* Pages */
-
 .dropmenu-content {
 	display: none;
   	position: fixed;
@@ -179,7 +157,6 @@ body{
  	z-index: 1;
 	border-radius: 0px 0px 5px 0px;
 }
-
 .dropmenu-content a {
 	display: block;
 	float: none;
@@ -192,28 +169,23 @@ body{
 	text-align: left;
 	text-shadow: 0px 0px 20px hsla(0,0%,0%,0.35);
 }
-
-.btmlink:hover {
+.btlink:hover {
 	border-radius: inherit;
 }
-
 .dropmenu-content a:hover {
 	color: white;
 	transition: 0.1s ease;
 	background-color: black;
 	
 }
-
 .dropmenu:hover .dropmenu-content {
 	display: block;
 	box-shadow: 0px 0px 50px 15px hsla(0,0%,0%,0.35);
 }
 
 /* Social Media */
-
 #social {
 }
-
 #social a {
 	margin-left: 1px;
 	z-index: 1;
@@ -223,14 +195,11 @@ body{
   	font-size: 45px;
 	text-decoration: none;
 }
-
-
 #social a:hover {
     font-size: 50px;
 }
 
 /* Search Bar */
-
 #navbar input[type=text] {
 	float: right;
 	padding: 6px;
@@ -246,7 +215,6 @@ body{
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 0.5px hsla(0,0%,0%,0.25);
 }
-
 .search-button button {
 	position: relative;
 	float: right;
@@ -261,13 +229,11 @@ body{
 	background-color: black;
 	border-radius: 0px 5px 5px 0px;
 }
-
 .search-button button:hover {
 	color: black;
 	background-color: white;
 	transition: 0.1s ease;
 }
-
 @media screen and (max-width: 600px) {
 	.topnav .search-container {
 		float: none;
@@ -280,79 +246,78 @@ body{
 		width: 100%;
 		margin: 0;
 		padding: 14px;
-}
-	.topnav input[type=text] {
-    border: 4px solid #ccc;
-  }
+    }
 }
 
 /* Title */
-
-.body {
-}
-
 h1{
-	margin: 0;
-	padding: 100px 0px 0px 0px;
+    margin: 0;
+	padding: 60px 0px 0px 0px;
 	text-align: center;
 	font-size: 72px;
 	color: white;
 }
-
 h2{
+    margin: 0;
     font-weight: bolder;
     color: white;
 	margin-top: 0px;
 	text-align: center;
-	padding: 0px 0px 100px 0px;
-	
+	padding: 0px 0px 60px 0px;
 }
-
 .forest{
 	background-image: url("Photos/Forest.jpg");
     background-repeat: no-repeat;
-	background-position: 50% 0px;
+	background-position: 50% -250px;
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
     z-index: -1;
     width: 100%;
+    bottom: 0;
+    display: inline-block;
 }
 
 /* Photos */
-
+.tcphotos {
+    margin: 0;
+    border: none;
+    background-color: white;
+}
 .images-title {
+    margin: 0 0 0 15%;
+    padding-top: 55px;
+    text-align: left;
     color: white;
     font-size: 65px;
     font-weight: bolder;
-    background: linear-gradient(327deg, #0069b8, #ff0000);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
+    background-size: 1600% 1600%;
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .images-subtitle {
-    color: white;
+    margin: 0 0 0 15.5%;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    text-align: left;
+    color: black;
     font-size: 14px;
     font-weight: bold;
 }
-
 .images {
+    justify-content: center;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(3,auto);
-    transform-origin: 50% 50%;
-    padding: 20px 60px;
-    max-width: 1300px;
-    
+    grid-template-columns: 31.8% 31.8% 31.8%;
+    grid-template-rows: auto;
+    padding: 20px 280px 0px 280px;
 }
-
 .images img {
-	margin-top: 8px;
-	vertical-align: middle;
+    justify-items: center;
 	width: 100%;
 	box-shadow: 0px 0px 10px 1px hsla(0,0%,0%,0.25);
 }
@@ -362,13 +327,11 @@ h2{
 		
 	}
 }
-
 @media screen and (max-width: 800px) {
 	.images {
 		
 	}
 }
-
 @media screen and (max-width: 600px) {
 	.images {
 		
