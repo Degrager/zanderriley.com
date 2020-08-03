@@ -141,19 +141,17 @@ body{
 }
 
 /* Button */
-.menu {
+.icon{
+    display: block;
 	font-size: 25px;
 	border: none;
 	outline: none;
 	color: black;
-	padding: 10px 10px 15px 10px;
-	background-color: inherit;
-	font-family: inherit;
+	padding: 10px 10px 10px 10px;
 	transition: 0.1s ease;
-	margin-top: auto;
 	margin: 0;
 }
-.menu:hover {
+.icon:hover {
 	background-color: black;
 	color: white;
     transition: 0.12s ease;
@@ -231,9 +229,7 @@ body{
 #navbar input[type=text] {
     z-index: 0;
     float: right;
-	position: relative;
 	border: 2px solid black;
-    vertical-align: center;
     margin: 8px 60px 0px 0px;
     padding: 6px 0px 6px 0px;
 	font-family: "SF Pro Display", "SF Pro Text";
@@ -242,7 +238,6 @@ body{
 	background-color: #e8e8e8;
 	border-radius: 6px;
 	box-shadow: 0px 0px 10px 0.5px hsla(0,0%,0%,0.25);
-    transform-origin: center;
 }
 #search {
     position: fixed;
@@ -266,21 +261,11 @@ body{
 	background-color: white;
 	transition: 0.1s ease;
 }
-@media screen and (max-width: 600px) {
-	.topnav .search-container {
-		float: none;
-        border: none;
-	}
-	.topnav a, .topnav input[type=text], .topnav .search-container button {
-		float: none;
-		display: block;
-		text-align: left;
-		width: 100%;
-		margin: 0;
-		padding: 14px;
+@media screen and (max-width: 692px) {
+    .search-button button {
+    visibility: hidden;
     }
 }
-
 /* Title */
 h1{
     margin: 0;
@@ -297,9 +282,9 @@ h2{
 	text-align: center;
 	padding: 0px 0px 130px 0px;
 }
-.forest{
+.bigsur{
 	background-image: url("Photos/BigSur.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: 0 -170px;
     background-size: cover;
     background-attachment: fixed;
@@ -328,14 +313,14 @@ h2{
     overflow: hidden;
     border: none;
     margin: auto;
-    background-color: white;
+    background-color: transparent;
     max-width: 1000px;
-    min-width: 600px;
+    height: 50%;
 }
 .images-title {
     white-space: nowrap;
     padding-top: 40px;
-    padding-left: 10px;
+    padding-left: 12px;
     text-align: left;
     color: white;
     font-size: 95px;
@@ -375,10 +360,6 @@ h2{
   0 3.1px 7.8px rgba(0, 0, 0, 0.131),
   0 5.8px 14.6px rgba(0, 0, 0, 0.158),
   0 14px 35px rgba(0, 0, 0, 0.22);
-
-
-
-
 }
 @media screen and (max-width: 960px) {
     .tcphotos {
@@ -391,12 +372,40 @@ h2{
         font-size: 3vw;
     }
 }
-@media screen and (max-width: 900px) {
-    
-    
+@media screen and (max-width: 640px) {
+    .tcphotos {
+        max-width: 640px;
+    }
+    .images {
+        grid-gap: 20px;
+        grid-template-columns: 45% 45%;
+    } 
 }
-@media screen and (max-width: 600px) {
-	.images {
-		
-	}
+@media screen and (max-width: 414) {
+    .tcphotos {
+        max-width: 414px;
+    }
+}
+
+/* Film */
+.film {
+    overflow: hidden;
+    border: none;
+    margin: auto;
+    background-color: hsla(240,100%,50%,0.00);
+    max-width: 1000px;
+}
+.film-title {
+    white-space: nowrap;
+    color: white;
+    font-size: 95px;
+    font-weight: bolder;
+    /* Color */
+    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
+    background-size: 1600% 1600%;
+    -webkit-animation: AnimationName 16s ease infinite;
+    -moz-animation: AnimationName 16s ease infinite;
+    animation: AnimationName 16s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
