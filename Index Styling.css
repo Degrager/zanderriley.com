@@ -284,7 +284,7 @@ body{
 /* Title */
 h1{
     margin: 0;
-	padding: 90px 0px 0px 0px;
+	padding: 130px 0px 0px 0px;
 	text-align: center;
 	font-size: 72px;
 	color: white;
@@ -295,12 +295,12 @@ h2{
     color: white;
 	margin-top: 0px;
 	text-align: center;
-	padding: 0px 0px 90px 0px;
+	padding: 0px 0px 130px 0px;
 }
 .forest{
-	background-image: url("Photos/Forest.jpg");
+	background-image: url("Photos/BigSur.jpg");
     background-repeat: no-repeat;
-	background-position: 50% -20px;
+    background-position: 0 -250px;
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
@@ -310,18 +310,27 @@ h2{
     display: inline-block;
 }
 
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 414px) {
+}
+
 /* Photos */
 .tcphotos {
-    margin: 0;
+    margin: auto;
     border: none;
     background-color: white;
+    max-width: 1300px;
+
 }
 .images-title {
-    margin: 0 25% 0 17%;
+    white-space: nowrap;
+    display: inline-flex;
+    overflow: hidden;
     padding-top: 55px;
     text-align: left;
     color: white;
-    font-size: 65px;
+    font-size: 6vw;
     font-weight: bolder;
     background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
     background-size: 1600% 1600%;
@@ -332,12 +341,10 @@ h2{
     -webkit-text-fill-color: transparent;
 }
 .images-subtitle {
-    margin: 0 25% 0 17.5%;
-    padding-top: 3px;
-    padding-bottom: 20px;
+    padding: 0px 3px 30px 10px;
     text-align: left;
     color: black;
-    font-size: 14px;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 .images {
@@ -346,28 +353,23 @@ h2{
     grid-gap: 30px;
     grid-template-columns: 31.8% 31.8% 31.8%;
     grid-template-rows: auto;
-    padding: 10px 17% 0px 17%;
 }
 .images img {
     justify-items: center;
 	width: 100%;
 	box-shadow: 0px 0px 10px 3px hsla(0,0%,0%,0.2);
 }
-
 @media screen and (max-width: 6000px) {
 	.images {
 		
 	}
 }
-@media screen and (max-width: 800px) {
-	.images {
-		
-	}
+@media screen and (max-width: 900px) {
+    
+    
 }
 @media screen and (max-width: 600px) {
 	.images {
 		
 	}
 }
-
-
