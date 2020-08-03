@@ -78,7 +78,7 @@ body{
 	/*Nav Bar*/
     z-index: 1;
 	margin-top: 0;
-    height: 55px;
+    height: 50px;
 	width: 100%;
 	overflow: hidden;
 	background-color: white;
@@ -95,9 +95,10 @@ body{
 /* Zander Title */
 .active {
 	float: left;
+    vertical-align: middle;
 	text-align: center;
 	color: black;
-	padding: 5px;
+	padding: 4px 6px 4px 0px;
 	font-size: 33px;
 	font-weight: 800;
 	text-decoration: none;
@@ -152,6 +153,7 @@ body{
 	margin: 0;
 }
 .icon:hover {
+    padding: 10px 10px 10px 10px;
 	background-color: black;
 	color: white;
     transition: 0.12s ease;
@@ -159,8 +161,8 @@ body{
 }
 
 /* Pages */
-.dropmenu-content {
-	display: none;
+#dropmenu-content {
+    display: none;
   	position: fixed;
   	background-color: #f9f9f9;
   	min-width: 160px;
@@ -168,7 +170,7 @@ body{
  	z-index: 1;
 	border-radius: 0px 0px 5px 0px;
 }
-.dropmenu-content a {
+#dropmenu-content a{
 	display: block;
 	float: none;
 	padding: 14px;
@@ -180,24 +182,20 @@ body{
 	text-align: left;
 	text-shadow: 0px 0px 20px hsla(0,0%,0%,0.35);
 }
-.btlink:hover {
+.btmlink:hover {
 	border-radius: inherit;
 }
-.dropmenu-content a:hover {
+#dropmenu-content a:hover {
 	color: white;
 	background-color: black;
     transition: 0.12s ease;
-}
-.dropmenu:hover .dropmenu-content {
-	display: block;
-	box-shadow: 0px 0px 50px 15px hsla(0,0%,0%,0.35);
 }
 
 /* Social Media */
 #social{
 }
 #social a {
-	margin: 8px 0px 0px 8px;
+	margin: 6px 0px 0px 8px;
     display: inline-block;
 	z-index: 1;
   	transition: 0.1s ease;
@@ -229,8 +227,9 @@ body{
 #navbar input[type=text] {
     z-index: 0;
     float: right;
+    display: block;
 	border: 2px solid black;
-    margin: 8px 60px 0px 0px;
+    margin: 6px 60px 0px 0px;
     padding: 6px 0px 6px 0px;
 	font-family: "SF Pro Display", "SF Pro Text";
 	font-size: 18px;
@@ -244,7 +243,7 @@ body{
     z-index: 1;
     background-color: black;
     padding: 8px 12px;
-    margin: 7px 0px 0px 220px;
+    margin: 5px 0px 0px 220px;
     border: 2px solid black;
     border-radius: 0px 6px 6px 0px;
     color: white;
