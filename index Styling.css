@@ -397,33 +397,32 @@ h2{
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.33);
 }
 
-.bridge-text:hover {
-    opacity: 1;
+#bridge-text:hover {
+   opacity: 1;
 }
 
-.bridge-text {
+#bridge-text {
     opacity: 0;
-    margin-left: 20px;
     position: absolute;
     font-size: 20px;
     height: 444px;
-    width: 286px;
-    padding: 14px 0px 0px 14px; 
-    font-weight: 600;
+    width: 285px;
+    padding: 14px 0px 0px 35px; 
+    font-weight: 700;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
 }
-.bridge-text i {
+#bridge-text i {
     position: absolute;
     font-size: 40px;
     padding-top: 6px;
 }
 #sf {
-    font-size: 23px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 800;
 }
 #ggb, #sf {
-    margin-left: 48px;
+    padding-left: 48px;
     padding-right: 45px;
 }
 
@@ -433,13 +432,14 @@ h2{
 
 .joshua-text {
     opacity: 0;
+    cursor: grab;
     margin-left: 350px;
     position: absolute;
     font-size: 20px;
     height: 444px;
     width: 286px;
     padding: 14px 0px 0px 14px; 
-    font-weight: 600;
+    font-weight: 700;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
 }
@@ -449,8 +449,8 @@ h2{
     padding-top: 6px;
 }
 #tnp {
-    font-size: 21.5px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 800;
 }
 #tnp, #jt {
     margin-left: 48px;
@@ -468,7 +468,7 @@ h2{
     height: 444px;
     width: 286px;
     padding: 14px 0px 0px 14px;
-    font-weight: 600;
+    font-weight: 700;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
 }
@@ -479,7 +479,7 @@ h2{
 }
 #hwd {
     font-size: 21.5px;
-    font-weight: 700;
+    font-weight: 800;
 }
 #hwd, #usb {
     margin-left: 48px;
@@ -507,7 +507,7 @@ h2{
     padding-top: 6px;
 }
 #cc {
-    font-size: 21.5px;
+    font-size: 21.3px;
     font-weight: 700;
 }
 #cc, #gbt {
@@ -545,17 +545,8 @@ h2{
 
 
 @media screen and (max-width: 1016px){
-    .bridge-text i{
-        font-size: 3.98vw;
-    }
-    #ggb {
-        font-size: 1.97vw;
-    }
-    #sf {
-        font-size: 2.25vw;
-    }
     .bridge-text {
-        margin-left: 2vw;
+       width: 28.2vw;
     }
 }
 @media screen and (max-width: 1016px){

@@ -70,20 +70,20 @@
             </div>
 <!--Images-->
             <div class="images"> 
-                <div class="bridge-text">
-                    <i class="far fa-compass"></i>
+                <div href="javascript:void(0)" id="bridge-text" onclick="one()">
+                    <i class="fas fa-compass"></i>
                     <div id="ggb">Golden Gate Bridge</div>
                     <div id="sf">San Francisco, CA</div>
                 </div>
                 <img class="bridge" src="Photos/Bridge Cropped.png" alt="Bridge">
                 <div class="joshua-text">
-                    <i class="far fa-compass"></i>
+                    <i class="fas fa-compass"></i>
                     <div id="jt">Joshua Tree</div>
                     <div id="tnp">Twentynine Palms, CA</div>
                 </div>
                 <img id="joshua" src= "Photos/Joshua Croped.png" alt="Joshua">
                 <div class="universal-text">
-                    <i class="far fa-compass"></i>
+                    <i class="fas fa-compass"></i>
                     <div id="usb">Universal Studios Backlot</div>
                     <div id="hwd">Hollywood, CA</div>
                 </div>
@@ -109,13 +109,15 @@
         </div>
     </div>
 <script>
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("dropmenu-content");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
+function one() {
+  document.getElementById("bridge-text")[0].style.opacity = "1";
     
 var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
 if (!touchsupport){ // browser doesn't support touch
