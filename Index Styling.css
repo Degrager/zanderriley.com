@@ -316,7 +316,7 @@ h2{
     padding-left: 40px;
     text-align: left;
     color: white;
-    font-size: 83.5px;
+    font-size: 86.5px;
     font-weight: 700;
     /* Color */
     background: linear-gradient(160deg, #44c98d, #078fbd, #ffd57c);
@@ -360,7 +360,7 @@ h2{
         max-width: 960px;
     }
 	.images-title {
-		font-size: 8.7vw;
+		font-size: 9vw;
         padding-top: 8vw;
 	}
     .images-info {
