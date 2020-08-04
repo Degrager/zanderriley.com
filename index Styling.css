@@ -510,6 +510,7 @@ h2{
     max-width: 1000px;
 }
 .film-title {
+    white-space: nowrap;
     text-align: left;
     padding-left: 17px;
     font-size: 86.5px;
