@@ -414,10 +414,11 @@ h2{
 
 /* Film */
 .film {
-    z-index: 0;
+    overflow: hidden;
     border: none;
-    margin-left: 37px; 
-    margin-top: 0;
+    margin: auto;
+    background-color: transparent;
+    z-index: 0;
     max-width: 1000px;
 }
 .film-title {
