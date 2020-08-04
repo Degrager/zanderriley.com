@@ -360,13 +360,13 @@ h2{
 }
 .images {
     height: auto;
-    z-index: 100;
     justify-content: center;
     align-content: center;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: auto auto 30px;
+    max-width: 1000px;
 }
 .images img {
     justify-items: center;
@@ -375,9 +375,99 @@ h2{
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.33);
 }
 
+.bridge-text:hover {
+    opacity: 1;
+}
+
+.bridge-text {
+    opacity: 0;
+    margin-left: 20px;
+    position: absolute;
+    font-size: 20px;
+    padding: 14px 0px 378px 17px;
+    font-weight: 600;
+    background-color: rgba(245,245,245,0.30);
+    transition: 0.2s ease;
+}
+.bridge-text i {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 7px;
+}
+#sf {
+    font-size: 23px;
+    font-weight: 700;
+}
+#ggb, #sf {
+    margin-left: 48px;
+    padding-right: 42px;
+}
+
+.joshua-text:hover {
+    opacity: 1;
+}
+
+.joshua-text {
+    opacity: 0;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 350px;
+    padding: 14px 0px 383px 15px;
+    font-weight: 600;
+    background-color: rgba(245,245,245,0.30);
+    transition: 0.2s ease;
+}
+.joshua-text i {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 7px;
+}
+#tnp {
+    font-size: 21px;
+    font-weight: 700;
+}
+#tnp, #jt {
+    margin-left: 48px;
+    padding-right: 20px;
+}
+
+.universal-text:hover {
+    opacity: 1;
+}
+
+.universal-text {
+    opacity: 0;
+    position: absolute;
+    font-size: 19px;
+    margin-left: 680px;
+    padding: 14px 0px 383px 15px;
+    font-weight: 600;
+    background-color: rgba(245,245,245,0.30);
+    transition: 0.2s ease;
+}
+.universal-text i {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 7px;
+}
+#hwd {
+    font-size: 21px;
+    font-weight: 700;
+}
+#hwd, #usb {
+    margin-left: 48px;
+    padding-right: 18px;
+}
+
+
+@media screen and (max-width: 1015px){
+    .bridge-text {
+        font-size: 2vw;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .tcphotos {
-        max-width: 960px;
     }
 	.images-title {
 		font-size: 9vw;
@@ -411,20 +501,17 @@ h2{
         max-width: 375px;
     }
 }
-
 /* Film */
 .film {
-    overflow: hidden;
-    border: none;
     margin: auto;
     background-color: transparent;
     z-index: 0;
     max-width: 1000px;
 }
 .film-title {
-    padding-left: 18px;
-    white-space: nowrap;
-    font-size: 95px;
+    text-align: left;
+    padding-left: 17px;
+    font-size: 86.5px;
     font-weight: bolder;
     /* Color */
     background: linear-gradient(132deg, #1631c6, #d76d05);
