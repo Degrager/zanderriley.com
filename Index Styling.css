@@ -304,7 +304,7 @@ h2{
     border: none;
     margin: auto;
     background-color: transparent;
-    max-width: 1500px;
+    max-width: 1000px;
 }
 .emoji {
     font-size: 5px;
@@ -313,7 +313,7 @@ h2{
 .images-title {
     white-space: nowrap;
     padding-top: 80px;
-    padding-left: 40px;
+    padding-left: 20px;
     text-align: left;
     color: white;
     font-size: 86.5px;
@@ -330,12 +330,12 @@ h2{
 .images-info {
     display: block;
     overflow: hidden;
-    padding-left: 32px;
+    padding-left: 34px;
     text-align: left;
     color: black;
     font-size: 28.7px;
     font-weight: 600;
-    margin: 8px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
 }
 .images {
     height: auto;
@@ -351,8 +351,7 @@ h2{
     justify-items: center;
 	width: 100%;
     height: auto;
-	box-shadow:
-        0px 0px 15px 1px rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.33);
 }
 
 @media screen and (max-width: 960px) {
@@ -362,9 +361,11 @@ h2{
 	.images-title {
 		font-size: 9vw;
         padding-top: 8vw;
+        padding-left: 2vw;
 	}
     .images-info {
         font-size: 3vw;
+        padding-left: 3.5vw;
     }
     .emoji {
         width: 8vw;
