@@ -60,7 +60,6 @@
 }
 
 /* Body */
-#mastercontainer { overflow: hidden; }
 
 html {
     width: 100%;
@@ -116,26 +115,34 @@ body {
 /* Zander Title */
 .active {
 	float: left;
-    vertical-align: middle;
 	text-align: center;
 	color: black;
-    padding: 4px 0px 4px 0px;
+    padding: 2.5px 0px 0px 5px;
 	font-size: 33px;
 	font-weight: 800;
 	text-decoration: none;
 	transition: 0.1s ease;
-	text-shadow: 0px 0px 5px hsla(0,0%,0%,0.2);
+	text-shadow:
+  0 1.8px 4.1px rgba(0, 0, 0, 0.125),
+  0 6px 13.8px rgba(0, 0, 0, 0.185),
+  0 27px 62px rgba(0, 0, 0, 0.31);
 }
 .active:hover {
-	text-shadow: 1px 1px red;
-	text-shadow: 0px 0px 5px hsla(0,0%,0%,0.1);
+	text-shadow:
+  0 0.9px 2.4px rgba(0, 0, 0, 0.018),
+  0 2px 5.5px rgba(0, 0, 0, 0.026),
+  0 3.7px 10px rgba(0, 0, 0, 0.032),
+  0 6.1px 16.5px rgba(0, 0, 0, 0.038),
+  0 10.1px 27.2px rgba(0, 0, 0, 0.044),
+  0 17.6px 47.6px rgba(0, 0, 0, 0.052),
+  0 38px 103px rgba(0, 0, 0, 0.07);
 	transition: 0.12s ease;
     transform: scale(1.05);
-    background: linear-gradient(90deg, #18caff, #ff6464, #2f5bb6, #f9cd8f, #f37cff, #7cff8c, #890077, #51d4c3);
-    background-size: 1600% 1600%;
-    -webkit-animation: AnimationName 16s ease infinite;
-    -moz-animation: AnimationName 16s ease infinite;
-    animation: AnimationName 16s ease infinite;
+    background: linear-gradient(50deg, #616161, #272727, #f9f9f9, #000000, #000000, #000000, #f0f0f0, #000000, #616161);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -180,10 +187,14 @@ body {
     transform: scale(1.25);
 }
 
+.dropmenu:hover #dropmenu-content {
+    display: block;
+}
+
 /* Pages */
 #dropmenu-content {
     display: none;
-  	position: fixed;
+  	position: absolute;
   	background-color: #f9f9f9;
   	min-width: 160px;
   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -191,20 +202,20 @@ body {
 	border-radius: 0px 0px 5px 0px;
 }
 #dropmenu-content a{
-	display: block;
+    display: block;
 	float: none;
-	padding: 14px;
+	padding: 15px;
 	color: black;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 800;
 	font-family: inherit;
 	text-decoration: none;
-	text-align: left;
 	text-shadow: 0px 0px 20px hsla(0,0%,0%,0.35);
 }
 .btmlink:hover {
 	border-radius: inherit;
 }
+
 #dropmenu-content a:hover {
 	color: white;
 	background-color: black;
@@ -215,6 +226,10 @@ body {
 #social{
     float: right;
 	border: none;
+    text-shadow:
+  0 1.8px 4.1px rgba(0, 0, 0, 0.125),
+  0 6px 13.8px rgba(0, 0, 0, 0.185),
+  0 27px 62px rgba(0, 0, 0, 0.31);
 }
 #social a {
 	margin: 6px 10px 0px 0px;
@@ -228,6 +243,10 @@ body {
 #social a:hover {
     transition: 0.11s ease;
     transform: scale(1.2);
+    text-shadow:
+  0 1.8px 5.7px rgba(0, 0, 0, 0.141),
+  0 6px 19.2px rgba(0, 0, 0, 0.209),
+  0 27px 86px rgba(0, 0, 0, 0.35);
 }
 .fa-youtube:hover {
     color: #FF0000; 
@@ -290,15 +309,17 @@ h2{
     }
 }
 .projects-title {
-    white-space: nowrap;
+    max-width: 1000px;
+    margin: auto;
     padding-top: 20px;
-    text-align: center;
+    padding-left: 40px;
+    text-align: left;
 }
 .projects-title a{
-    color: white;
+    color: black;
     font-size: 120px;
     font-weight: 900;
-    text-decoration: none;
+    text-decoration: none; 
     /* Color */
     background: linear-gradient(270deg, #e64736, #e1852d, #eee67e, #85e64e, #4ee6b8, #4e9be6, #664ee6, #e64e9d);
     background-size: 1600% 1600%;
@@ -306,7 +327,7 @@ h2{
     -moz-animation: AnimationName 18s ease infinite;
     animation: AnimationName 18s ease infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
 @media screen and (max-width: 560px){
     .projects-title a {
@@ -338,7 +359,7 @@ h2{
     text-align: left;
     color: white;
     font-size: 86.5px;
-    font-weight: 700;
+    font-weight: 800;
     /* Color */
     background: linear-gradient(160deg, #44c98d, #078fbd, #ffd57c);
     background-size: 600% 600%;
@@ -385,7 +406,9 @@ h2{
     margin-left: 20px;
     position: absolute;
     font-size: 20px;
-    padding: 14px 0px 378px 17px;
+    height: 444px;
+    width: 286px;
+    padding: 14px 0px 0px 14px; 
     font-weight: 600;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
@@ -393,7 +416,7 @@ h2{
 .bridge-text i {
     position: absolute;
     font-size: 40px;
-    padding-top: 7px;
+    padding-top: 6px;
 }
 #sf {
     font-size: 23px;
@@ -401,7 +424,7 @@ h2{
 }
 #ggb, #sf {
     margin-left: 48px;
-    padding-right: 42px;
+    padding-right: 45px;
 }
 
 .joshua-text:hover {
@@ -410,10 +433,12 @@ h2{
 
 .joshua-text {
     opacity: 0;
-    position: absolute;
-    font-size: 22px;
     margin-left: 350px;
-    padding: 14px 0px 383px 15px;
+    position: absolute;
+    font-size: 20px;
+    height: 444px;
+    width: 286px;
+    padding: 14px 0px 0px 14px; 
     font-weight: 600;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
@@ -421,15 +446,14 @@ h2{
 .joshua-text i {
     position: absolute;
     font-size: 40px;
-    padding-top: 7px;
+    padding-top: 6px;
 }
 #tnp {
-    font-size: 21px;
+    font-size: 21.5px;
     font-weight: 700;
 }
 #tnp, #jt {
     margin-left: 48px;
-    padding-right: 20px;
 }
 
 .universal-text:hover {
@@ -438,10 +462,12 @@ h2{
 
 .universal-text {
     opacity: 0;
-    position: absolute;
-    font-size: 19px;
     margin-left: 680px;
-    padding: 14px 0px 383px 15px;
+    position: absolute;
+    font-size: 19.13px;
+    height: 444px;
+    width: 286px;
+    padding: 14px 0px 0px 14px;
     font-weight: 600;
     background-color: rgba(245,245,245,0.30);
     transition: 0.2s ease;
@@ -449,24 +475,91 @@ h2{
 .universal-text i {
     position: absolute;
     font-size: 40px;
-    padding-top: 7px;
+    padding-top: 6px;
 }
 #hwd {
-    font-size: 21px;
+    font-size: 21.5px;
     font-weight: 700;
 }
 #hwd, #usb {
     margin-left: 48px;
-    padding-right: 18px;
+}
+
+.culver-text:hover {
+    opacity: 1;
+}
+
+.culver-text {
+    opacity: 0;
+    margin-left: 680px;
+    position: absolute;
+    font-size: 19.13px;
+    height: 444px;
+    width: 286px;
+    padding: 14px 0px 0px 14px;
+    font-weight: 600;
+    background-color: rgba(245,245,245,0.30);
+    transition: 0.2s ease;
+}
+.culver-text i {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 6px;
+}
+#cc {
+    font-size: 21.5px;
+    font-weight: 700;
+}
+#cc, #gbt {
+    margin-left: 48px;
+}
+
+.driving-text:hover {
+    opacity: 1;
+}
+
+.driving-text {
+    opacity: 0;
+    margin-left: 680px;
+    position: absolute;
+    font-size: 19.13px;
+    height: 444px;
+    width: 286px;
+    padding: 14px 0px 0px 14px;
+    font-weight: 600;
+    background-color: rgba(245,245,245,0.30);
+    transition: 0.2s ease;
+}
+.driving-text i {
+    position: absolute;
+    font-size: 40px;
+    padding-top: 6px;
+}
+#scm {
+    font-size: 21.5px;
+    font-weight: 700;
+}
+#scm, #i5 {
+    margin-left: 48px;
 }
 
 
-@media screen and (max-width: 1015px){
+@media screen and (max-width: 1016px){
+    .bridge-text i{
+        font-size: 3.98vw;
+    }
+    #ggb {
+        font-size: 1.97vw;
+    }
+    #sf {
+        font-size: 2.25vw;
+    }
     .bridge-text {
-        font-size: 2vw;
+        margin-left: 2vw;
     }
 }
-
+@media screen and (max-width: 1016px){
+}
 @media screen and (max-width: 960px) {
     .tcphotos {
     }
@@ -512,9 +605,9 @@ h2{
 .film-title {
     white-space: nowrap;
     text-align: left;
-    padding-left: 17px;
+    padding-left: 24px;
     font-size: 86.5px;
-    font-weight: bolder;
+    font-weight: 800;
     /* Color */
     background: linear-gradient(132deg, #1631c6, #d76d05);
     background-size: 400% 400%;
@@ -523,4 +616,14 @@ h2{
     animation: AnimationName 4s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.film-info {
+    display: block;
+    overflow: hidden;
+    padding-left: 34px;
+    text-align: left;
+    color: black;
+    font-size: 28.7px;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
 }
