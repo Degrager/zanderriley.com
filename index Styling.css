@@ -185,7 +185,7 @@ body {
 	border: none;
 	outline: none;
 	color: black;
-	padding: 10px 10px 10px 10px;
+	padding: 9px 10px 10px 10px;
 	transition: 0.1s ease;
 	margin: 0;
 }
@@ -533,6 +533,9 @@ h2{
     .grid-details h2{
         font-size: 2.9vw;
     }
+    .images-info {
+        font-size: 3.6vw; 
+    }
 }
 @media screen and (max-width: 410px) {
     .grid-details i{
@@ -544,9 +547,8 @@ h2{
 
 .film {
     margin: auto;
+    overflow: hidden;
     padding-top: 50px;
-    background-color: transparent;
-    z-index: 0;
     max-width: 1000px;
 }
 .film-title {
@@ -563,13 +565,55 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.film-emoji {
+    font-size: 5px;
+    width: 77px;
+}
 .film-info {
     display: block;
-    overflow: hidden;
     padding-left: 34px;
     text-align: left;
     color: black;
     font-size: 28.7px;
     font-weight: 600;
-    margin: 0px 0px 20px 0px;
+}
+.film-yvids {
+    padding-bottom: 500px;
+}
+.film-yvid1, .film-yvid2, .film-yvid3 {
+    width: 100%;
+    margin-top: -100px;
+    padding-top: 56.25%;
+    position: relative;
+}
+.film-yvid1 h1{
+    color: black;
+}
+
+.film-yvid1 iframe, .film-yvid2 iframe, .film-yvid3 iframe {
+    padding: 0px;
+    margin: auto auto 0px auto;
+    width: 95%;
+    height: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    max-width: 1000px;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.33);
+}
+
+@media screen and (max-width: 960px){
+    .film-title {
+		font-size: 9vw;
+        padding-left: 2vw;
+	}
+    .film-info {
+        font-size: 3vw;
+        padding-left: 3.5vw;
+    }
+    .film-emoji {
+        width: 8vw;
+    }
 }
