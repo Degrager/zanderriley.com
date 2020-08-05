@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/* Fonts */
+
 @font-face {
   font-family: "SF Display";
   font-weight: 900;
@@ -55,9 +58,8 @@
   src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
 }
 
-* {
-    margin: 0; padding: 0;
-}
+
+
 
 /* Body */
 
@@ -85,7 +87,10 @@ body {
      } 
 } 
 
-/* Top Nav Bar */
+
+
+/* NavBar */
+
 #navbar {
 	/*Nav Bar*/
     z-index: 1;
@@ -112,7 +117,9 @@ body {
 	}
 }
 
-/* Zander Title */
+
+/* Zander Riley */
+
 .active {
 	float: left;
 	text-align: center;
@@ -162,13 +169,16 @@ body {
     100%{background-position:0% 47%}
 }
 
+
 /* Dropdown Menu */
+
 .dropmenu {
 	float: left;
 	overflow: hidden;
 }
-
-/* Button */
+.dropmenu:hover #dropmenu-content {
+    display: block;
+}
 .icon{
     display: block;
 	font-size: 25px;
@@ -187,11 +197,9 @@ body {
     transform: scale(1.25);
 }
 
-.dropmenu:hover #dropmenu-content {
-    display: block;
-}
 
 /* Pages */
+
 #dropmenu-content {
     display: none;
   	position: absolute;
@@ -215,14 +223,15 @@ body {
 .btmlink:hover {
 	border-radius: inherit;
 }
-
 #dropmenu-content a:hover {
 	color: white;
 	background-color: black;
     transition: 0.12s ease;
 }
 
-/* Social Media */
+
+/* Social Icons */
+
 #social{
     float: right;
 	border: none;
@@ -264,7 +273,9 @@ body {
     color: #00acee;
 }
 
-/* Title */
+
+/* This is Zander Riley */
+
 h1{
     margin: 0;
 	padding: 130px 0px 0px 0px;
@@ -314,13 +325,13 @@ h2{
     max-width: 1000px;
     min-width: 375px;
 }
+
+
+/* My Info */
+
 .myinfo {
     padding: 80px 0px 50px 60px;
 }
-
-.myinfo-image {
-}
-
 .myinfo-image img{
     object-fit: cover;
     object-position: bottom;
@@ -328,6 +339,9 @@ h2{
     height: 250px;
     border-radius: 150px;
 }
+
+
+/* Projects */
 
 .projects-title {
     max-width: 1000px;
@@ -360,7 +374,9 @@ h2{
     }
 }
 
-/* Photos */
+
+/* Traveling California */
+
 .images-title {
     white-space: nowrap;
     padding-top: 80px;
@@ -378,20 +394,24 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.emoji {
-    font-size: 5px;
-    width: 77px;
-}
 .images-info {
     display: block;
     overflow: hidden;
     padding-left: 34px;
+    padding-bottom: 10px;
     text-align: left;
     color: black;
     font-size: 28.7px;
     font-weight: 600;
     margin: 0px 0px 20px 0px;
 }
+.emoji {
+    font-size: 5px;
+    width: 77px;
+}
+
+
+/* Image Grid */
 
 .gridimages {
     justify-content: center;
@@ -424,14 +444,17 @@ h2{
 .grid:hover .grid-overlay {
     opacity: 1;
 }
-
+.grid:hover {
+    transform: scale(1.02);
+    transition: 0.1s ease-in-out 0s;
+}
 .grid-image {
     justify-items: center;
 	width: 100%;
     height: auto;
+    border-radius: 10px;
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.33);
 }
-
 .grid-details {
     position: absolute;
     text-align: left;
@@ -447,55 +470,41 @@ h2{
   0 0.9px 4.1px rgba(0, 0, 0, 0.065),
   0 1.6px 7.4px rgba(0, 0, 0, 0.077),
   0 2.9px 13.8px rgba(0, 0, 0, 0.093),
-  0 7px 33px rgba(0, 0, 0, 0.13)
-;
-
-
-
-
-
-
-
-
-
+  0 7px 33px rgba(0, 0, 0, 0.13);
 }
-
 .grid:hover .grid-details {
     opacity: 1;
 }
-
 .grid-details i{
     color: white;
-    padding: 15px 15px 15px 15px;
-    float: left;
+    padding: 18px 12px 12px 12px;
     font-size: 40px;
+    float: left;
 }
-
 .grid-details h1{
-    margin-top: -38%;
-    padding-left: 20px;
-    color: white;
-    text-align: left;
-    font-size: 20px;
+    padding-top: 14px;
+    font-size: 19px;
     font-weight: 700;
 }
-
 .grid-details h2 {
-    color: white;
-    text-align: left;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 800;
 }
-
+.grid-details h1, .grid-details h2 {
+    color: white;
+    text-align: left;
+}
 @media screen and (max-width: 1016px){
-    .grid-details h1{
-       font-size: 2vw;
+    .grid-details i{
+        font-size: 3.95vw;
     }
-    .grid-details p{
-        font-size: 2.168vw;
+    .grid-details h1{
+        font-size: 1.87vw;
+    }
+    .grid-details h2{
+        font-size: 2.07vw;
     }
 }
-
 @media screen and (max-width: 960px) {
 	.images-title {
 		font-size: 9vw;
@@ -515,19 +524,32 @@ h2{
         grid-gap: 20px;
         grid-template-columns: 45% 45%;
     } 
+    .grid-details i{
+        font-size: 5.5vw ;
+    }
     .grid-details h1{
-        font-size: 2.2vw;
+        font-size: 2.8vw;
+    }
+    .grid-details h2{
+        font-size: 2.9vw;
     }
 }
+@media screen and (max-width: 410px) {
+    .grid-details i{
+        padding: 10px 8px 10px 8px;
+    }
+}
+
 /* Film */
+
 .film {
     margin: auto;
+    padding-top: 50px;
     background-color: transparent;
     z-index: 0;
     max-width: 1000px;
 }
 .film-title {
-    white-space: nowrap;
     text-align: left;
     padding-left: 24px;
     font-size: 86.5px;
