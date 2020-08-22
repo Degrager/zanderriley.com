@@ -1,66 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-/* Fonts */
-
-@font-face {
-  font-family: "SF Display";
-  font-weight: 900;
-  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
-}
-/** Bold */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 700;
-  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
-}
-/** Heavy */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 800;
-  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
-}
-/** Light */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 200;
-  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
-}
-/** Medium */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 500;
-  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
-}
-/** Regular */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 400;
-  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
-}
-/** Semibold */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 600;
-  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
-}
-/** Thin */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 300;
-  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
-}
-/** Ultralight */
-@font-face {
-  font-family: "SF Display";
-  font-weight: 100;
-  src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
-}
-
-
-
-
 /* Body */
 
 html {
@@ -71,12 +11,12 @@ html {
     min-height: 100%
 }
 body {
+  font-family: SF UI Display;
 	margin: auto;
-    font-family: "SF Display";
-    animation: fadeInAnimation ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    height: 100%;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  height: 100%;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -89,7 +29,7 @@ body {
 
 /* NavBar */
 
-.navbar {
+#navbar {
     position: fixed;
     display: flex;
     background-color: white;
@@ -130,9 +70,6 @@ body {
 .navbar-buttons {
   font-size: 24px;
 	border-radius: 0px 0px 5px 0px;
-}
-.navbar-buttons h1{
-  font-size: 26px;
 }
 .btn{
   display: inline;
@@ -215,11 +152,13 @@ body {
   display: flex;
   margin: auto;
   max-width: 90%;
-  padding: 25px;
+  padding-top: 25px;
   justify-content: space-between;
   align-items: center;
 }
 .myinfo-image {
+  align-items: center;
+  vertical-align: middle;
   object-fit: cover;
   object-position: bottom;
   width: 220px;
@@ -290,9 +229,9 @@ body {
 
 /* Divider */
 
-.divider {
+.divider1 {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
-    margin: 0px;
+    margin: 40px 0px 25px 0px;
     width: 100%;
     max-width: inherit;
     height: 2px;
@@ -300,11 +239,12 @@ body {
 
 /* Filmmaking title */
 
-.filmmaking-title {
+#filmmaking-title {
     max-width: 1000px;
     text-align: center;
+    padding: 0px 0px 20px 0px;
 }
-.filmmaking-title a{
+#filmmaking-title a{
     color: black;
     font-size: 120px;
     font-weight: 900;
@@ -318,7 +258,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 560px){
-    .filmmaking-title a {
+    #filmmaking-title a {
         font-size: 17.9vw;
     }
 }
@@ -409,13 +349,24 @@ body {
     }
 }
 
+/* Divider */
+
+.divider2 {
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    margin: 25px 0px 25px 0px;
+    width: 100%;
+    max-width: inherit;
+    height: 2px;
+}
+
 /* Filmmaking title */
 
-.photography-title {
+#photography-title {
     max-width: 1000px;
     text-align: center;
+    padding: 20px 0px;
 }
-.photography-title a{
+#photography-title a{
     color: black;
     font-size: 120px;
     font-weight: 900;
@@ -426,7 +377,7 @@ body {
     -moz-animation: AnimationName 18s ease infinite;
     animation: AnimationName 18s ease infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 560px){
     .photography-title a {
@@ -503,17 +454,18 @@ body {
     -moz-transition: all 0.15s ease-in-out 0s;
     transition: all 0.15s ease-in-out 0s;
 }
-.grid-column:hover .grid-overlay {
+.column-image:hover .grid-overlay {
     opacity: 1;
 }
 .grid-image {
 	  width: 100%;
     height: auto;
 }
-.grid-column:hover .grid-details {
+.column-image:hover .grid-details {
     opacity: 1;
 }
 .grid-details {
+  z-index: 1;
     position: absolute;
     opacity: 0;
     padding-left: 10px;

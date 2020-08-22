@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="index Styling.css">
+<link rel="stylesheet" href="fonts/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,11 +17,11 @@
 </head>
 
 <body>
-	<div class="navbar">
+	<div id="navbar">
 		<div class="navbar-buttons">
-			<h1 class="btn" href="index.html">HOME</h1>
-			<h2 class="btn" href="Filmmaking.html">FILMMAKING</h2>
-			<h3 class="btn" href="Photography.html">PHOTOGRAPHY</h3>
+			<a class="btn" id="home" href="index.html">HOME</a>
+			<a class="btn" id="film" href="#filmmaking-title" data-uk-smooth-scroll="{offset: -120}">FILMMAKING</a>
+			<a class="btn" id="photo" href="Photography.html" >PHOTOGRAPHY</a>
 		</div>
 		<img class="namelogo" src="Photos/ZanderRileyLogo.png" alt="Zander Riley">
   </div>
@@ -47,8 +48,8 @@
 										</div>
               	</div>
             </div>
-            <div class="divider"></div>
-            <div class="filmmaking-title">
+            <div class="divider1"></div>
+            <div id="filmmaking-title">
                 <a>FILMMAKING</a>
             </div>
 						<div class="film">
@@ -77,7 +78,8 @@
                     </div>
                 </div>
             </div>
-						<div class="photography-title">
+						<div class="divider2"></div>
+						<div id="photography-title">
                 <a>PHOTOGRAPHY</a>
             </div>
             <div class="tcphotos">
@@ -102,16 +104,15 @@
                         </div>
                         <div class="grid-overlay"></div>
                       	<img class="grid-image" src="Photos/Bridge.JPG" 	alt="Bridge">
-												<div>
-                      			<div class="grid-details">
+                      	<div class="grid-details">
 																<i class="fas fa-compass"></i>
                             		<h1 class="grid-title">Goon Biking Trails</h1>
                             		<h2 class="grid-subtitle">Culver City, CA</h2>
                         		</div>
-                        		<div class="grid-overlay"></div>
-                        		<img class="grid-image" src="Photos/Culver.png"
-                         		alt="Culver">
-												</div>
+                        <div class="grid-overlay"></div>
+                        <img class="grid-image" src="Photos/Culver.png" alt="Culver">
+												<img class="grid-image" src= "Photos/Joshua.JPG" alt="Joshua">
+												<img class="grid-image" src="Photos/Flag.jpg" alt="Flag">
                   	</div>
                     <div class="grid-column">
                         <div class="grid-details">
@@ -120,7 +121,6 @@
                             <h2 class="grid-subtitle">Twentynine Palms, CA</h2>
                         </div>
                         <div class="grid-overlay"></div>
-                        <img class="grid-image" src= "Photos/Joshua.JPG" alt="Joshua">
                         <div class="grid-details">
                             <i class="fas fa-compass"></i>
                             <h1 class="grid-title">Interstate I-5 Highway</h1>
@@ -128,6 +128,9 @@
                         </div>
                         <div class="grid-overlay"></div>
                         <img class="grid-image" src="Photos/Driving.png" alt="Driving">
+												<img class="grid-image" src="Photos/Beach.jpg" alt="Beach">
+												<img class="grid-image" src="Photos/Alley.jpg" alt="Alley">
+												<img class="grid-image" src="Photos/BigBear.jpg" alt="Big Bear">
                     </div>
                     <div class="grid-column">
                       <div class="grid-details">
@@ -135,16 +138,18 @@
                                     <h1 class="grid-title">Universal Studios Backlot</h1>
                                     <h2 class="grid-subtitle">Hollywood, CA</h2>
                                 </div>
-                                <div class="grid-overlay"></div>
-                                    <img class="grid-image" src="Photos/Universal.JPG" alt="Universal">
+											<div class="grid-overlay"></div>
+											<img class="grid-image" src="Photos/Universal.JPG" alt="Universal">
                       <div class="grid-details">
-                                    <i class="fas fa-compass"></i>
-                                    <h1 class="grid-title">3rd Street Promenade</h1>
-                                    <h2 class="grid-subtitle">Santa Monica, CA</h2>
-                                </div>
-                                <div class="grid-overlay"></div>
-                                <img class="grid-image" src="Photos/Promenade.png" alt="Promenade">
-                    </div>
+                        	<i class="fas fa-compass"></i>
+                          <h1 class="grid-title">3rd Street Promenade</h1>
+                          <h2 class="grid-subtitle">Santa Monica, CA</h2>
+                      </div>
+											<div class="grid-overlay"></div>
+											<img class="grid-image" src="Photos/Promenade.png" alt="Promenade">
+											<img class="grid-image" src="Photos/Ghost.JPG" alt="Culver">
+											<img class="grid-image" src="Photos/Clouds.jpg" alt="Clouds">
+										</div>
                 </div>
             </div>
         </div>
