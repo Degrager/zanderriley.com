@@ -40,6 +40,11 @@ body {
     height: 60px;
 	  width: 100%;
     border: none;
+    box-shadow:
+  0 2.3px 7px rgba(0, 0, 0, 0.053),
+  0 7.8px 23.5px rgba(0, 0, 0, 0.077),
+  0 35px 105px rgba(0, 0, 0, 0.13)
+;
 }
 
 /* Zander Riley */
@@ -90,7 +95,7 @@ body {
 
 /* Zander Riley */
 
-.bigsur {
+#bigsur {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,13 +110,13 @@ body {
   width: 100%;
   height: 250px;
 }
-.bigsur img {
+#bigsur img {
   margin: auto;
   width: 100px;
   height: 100px;
   border-radius: 50px;
 }
-.bigsur h1{
+#bigsur h1{
 	padding: 0px;
 	text-align: center;
 	font-size: 35px;
@@ -153,6 +158,7 @@ body {
   margin: auto;
   max-width: 90%;
   padding-top: 25px;
+  padding-bottom: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -229,9 +235,9 @@ body {
 
 /* Divider */
 
-.divider1 {
+#divider1 {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
-    margin: 40px 0px 25px 0px;
+    margin: 25px 0px 25px 0px;
     width: 100%;
     max-width: inherit;
     height: 2px;
@@ -242,7 +248,7 @@ body {
 #filmmaking-title {
     max-width: 1000px;
     text-align: center;
-    padding: 0px 0px 20px 0px;
+    padding: 20px 0px;
 }
 #filmmaking-title a{
     color: black;
@@ -351,7 +357,7 @@ body {
 
 /* Divider */
 
-.divider2 {
+#divider2 {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
     margin: 25px 0px 25px 0px;
     width: 100%;
