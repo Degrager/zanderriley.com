@@ -30,6 +30,7 @@ body {
 /* NavBar */
 
 #navbar {
+  margin: auto;
     position: fixed;
     display: flex;
     background-color: white;
