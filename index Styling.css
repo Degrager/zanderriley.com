@@ -276,17 +276,22 @@ body {
     padding: 0px 18px;
     max-width: inherit;
 }
+.film-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 0px 0px;
+}
 .film-title {
     text-align: left;
-    padding-left: 0px;
-    font-size: 86.5px;
+    font-size: 75px;
     font-weight: 800;
     /* Color */
     background: linear-gradient(132deg, #1631c6, #d76d05);
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -295,21 +300,27 @@ body {
     width: 77px;
 }
 .film-info {
-    display: block;
-    padding-left: 10px;
     text-align: left;
     color: black;
-    font-size: 28.7px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
 }
-
+#biking {
+    background: linear-gradient(111deg, #ffe9c3, #2aa94a, #00c1e1, #e16f00);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Videos */
 
 .film-yvids {
     padding-top: 140px;
 }
 .film-yvid1 {
-    margin: -120px auto;
+    margin: -130px auto;
     position: relative;
     overflow: hidden;
 }
@@ -365,7 +376,7 @@ body {
     height: 2px;
 }
 
-/* Filmmaking title */
+/* Photography title */
 
 #photography-title {
     max-width: 1000px;
@@ -397,13 +408,17 @@ body {
   max-width: inherit;
   padding: 0px 20px;
 }
+.images-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
 .images-title {
-    white-space: nowrap;
-    padding-left: 0px;
     text-align: left;
-    color: white;
-    font-size: 86.5px;
-    font-weight: 800;
+    font-size: 54px;
+    font-weight: 900;
     /* Color */
     background: linear-gradient(160deg, #44c98d, #078fbd, #ffd57c);
     background-size: 600% 600%;
@@ -413,20 +428,15 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.images-info {
-    display: block;
-    overflow: hidden;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    text-align: left;
-    color: black;
-    font-size: 28.7px;
-    font-weight: 600;
-    margin: 0px 0px 20px 0px;
-}
 .emoji {
     font-size: 5px;
-    width: 77px;
+    width: 62px;
+}
+.images-info {
+    text-align: left;
+    color: black;
+    font-size: 19.5px;
+    font-weight: 700;
 }
 
 /* Image Grid */
