@@ -149,8 +149,7 @@ body {
   display: block;
   margin: auto;
   max-width: 90%;
-  padding-top: 25px;
-  padding-bottom: 15px;
+  padding: 55px;
   justify-content: center;
   align-items: center;
 }
@@ -172,19 +171,18 @@ body {
   color: #d8dbe2;
 }
 .myinfo-text h1 {
-    margin: 0;
-    padding: 30px 0px 0px 0px;
-    font-size: 90px;
-    font-weight: 800;
-    text-shadow:
+  margin: auto;
+  font-size: 90px;
+  font-weight: 800;
+  text-shadow:
   0 0px 1.5px rgba(0, 0, 0, 0.097),
   0 0px 4.9px rgba(0, 0, 0, 0.143),
   0 0px 22px rgba(0, 0, 0, 0.24);
 }
 .myinfo-text h2 {
-  color: gray;
+  color: grey;
   padding: 0px;
-  margin: 0;
+  margin-top: -5px;
   font-size: 22px;
   font-weight: 800;
 }
@@ -209,10 +207,10 @@ body {
 .social a {
   text-align: center;
   display: inline-block;
-	margin: 6px;
+	margin: 0px 6px;
 	z-index: 1;
   transition: 0.1s ease;
-  font-size: 40px;
+  font-size: 45px;
 	text-decoration: none;
   color: white;
 }
@@ -244,7 +242,6 @@ body {
 
 #divider1 {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#1B1B1D), to(#1B1B1D), color-stop(50%, white));
-    padding: 25px auto;
     max-width: 1500px;
     height: 2px;
 }
@@ -252,19 +249,26 @@ body {
 /* Filmmaking title */
 
 #filmmaking-title {
-    max-width: 1000px;
-    text-align: center;
-    margin: auto;
-    padding: 80px 0px;
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 55px 0px 45px 0px;
 }
 #filmmaking-title a{
-    color: #d8dbe2;
-    font-size: 80px;
-    font-weight: 900;
-    text-shadow:
+  color: #d8dbe2;
+  font-size: 80px;
+  font-weight: 900;
+  padding: 0;
+  text-shadow:
   0 0px 1.8px rgba(0, 0, 0, 0.09),
   0 0px 14px rgba(0, 0, 0, 0.18);
     /* Color */
+}
+#filmmaking-title h1{
+  color: grey;
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: -5px;
 }
 @media screen and (max-width: 560px){
     #filmmaking-title a {
@@ -275,20 +279,29 @@ body {
 /* Film */
 
 .film {
-    overflow: hidden;
-    padding: 0px 18px;
-    max-width: inherit;
+  margin-bottom: 55px;
+  overflow: hidden;
+  max-width: inherit;
 }
 .film-text {
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 0px 0px;
+  padding-bottom: 10px;
   color: #d8dbe2;
 }
+#biking {
+  background: linear-gradient(111deg, #ffe9c3, #2aa94a, #00c1e1, #e16f00);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .film-title {
-    text-align: left;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 800;
     text-shadow:
   0 0px 1.8px rgba(0, 0, 0, 0.09),
@@ -302,32 +315,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.film-emoji {
-    font-size: 5px;
-    width: 77px;
-}
 .film-info {
     text-align: left;
     font-size: 24px;
     font-weight: 700;
 }
-#biking {
-    background: linear-gradient(111deg, #ffe9c3, #2aa94a, #00c1e1, #e16f00);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 12s ease infinite;
-    -moz-animation: AnimationName 12s ease infinite;
-    animation: AnimationName 12s ease infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 /* Videos */
 
-.film-yvid-1, .film-yvid-2 {
-}
 .film-yvid-1-1, .film-yvid-2-1, .film-yvid-2-2 {
-  align-items: center;
   position: relative;
-  overflow: hidden;
 }
 .film-yvid-1-1:after, .film-yvid-2-1:after, .film-yvid-2-2:after {
   padding-top: 56.25%;
@@ -336,8 +333,6 @@ body {
 }
 .film-yvid-1-1 iframe, .film-yvid-2-1 iframe, .film-yvid-2-2 iframe {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -345,25 +340,25 @@ body {
   padding-top: 10px;
 }
 @media screen and (max-width: 960px){
-    .film-title {
-		font-size: 9vw;
-        padding-left: 2vw;
-	}
-    .film-info {
-        font-size: 3vw;
-        padding-left: 3.5vw;
-    }
-    .film-emoji {
-        width: 8vw;
-    }
+}
+
+/* Frames */
+.film-yvid-1 {
+  justify-content: space-between;
+  align-items: center;
+}
+.film-yvid-1-1-frames {
+  z-index: 100;
+}
+.frame1-1-1{
+  width: 15%;
 }
 
 /* Divider */
 
 #divider2 {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#1B1B1D), to(#1B1B1D), color-stop(50%, white));
-    margin: 25px 0px 25px 0px;
-    width: 100%;
+    padding: 25px auto;
     max-width: 1500px;
     height: 2px;
 }
