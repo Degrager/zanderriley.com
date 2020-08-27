@@ -17,28 +17,29 @@
 </head>
 
 <body>
-	<div id="navbar">
-		<div class="navbar-buttons">
-			<a class="btn" id="home" href="#bigsur">HOME</a>
-			<a class="btn" id="film" href="#divider1" data-uk-smooth-scroll="{offset: -120}">FILMMAKING</a>
-			<a class="btn" id="photo" href="#divider2" >PHOTOGRAPHY</a>
+	<div class="navbar">
+		<div class="navbar-container">
+			<img class="namelogo" src="Photos/ZanderRileyLogo.png" alt="Zander Riley">
+			<div class="navbar-buttons">
+				<a class="btn" id="home" href="#bigsur">HOME</a>
+				<a class="btn" id="film" href="#divider1" data-uk-smooth-scroll="{offset: -120}">FILMMAKING</a>
+				<a class="btn" id="photo" href="#divider2" >PHOTOGRAPHY</a>
+			</div>
 		</div>
-		<img class="namelogo" src="Photos/ZanderRileyLogo.png" alt="Zander Riley">
   </div>
   <div id="bigsur">
 		<div class="bigsur-container">
-      <img src="Photos/degrager.png" alt="Degrager">
-			<h1>Zander Riley & Degrager Productions</h1>
+			<img src="Photos/Driving.png" alt="Driving-Top">
 		</div>
 	</div>
   <div class="lower-body">
+		<div class="lower-body-border">
         <div class="lower-body-container">
             <div class="myinfo">
               <div class="myinfo-container">
-										<img class="myinfo-image" src="Photos/Apple.JPG" alt="Apple Selfie">
 										<div class="myinfo-text">
-		                    <h1>Zander Riley</h1>
-		                    <h2>Filmmaker / Photographer / PC Specialist</h2>
+		                    <h1>ZANDER RILEY</h1>
+		                    <h2>Filmamker / Photographer / PC Specialist</h2>
 												<p>ZANDRRILEY@GMAIL.COM</p>
 										</div>
                     <div class="social">
@@ -55,8 +56,7 @@
 						<div class="film">
 								<div class="film-text">
 									<div class="film-title" id="biking">
-									<a>Moutain Biking</a>
-									<img src="Photos/mountain-bicyclist.png" alt="Film Emoji" class="film-emoji">
+											<a>Moutain Biking</a>
 									</div>
 									<div class="film-info">
 								 <div class="film-subtitle">
@@ -67,10 +67,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="film-yvids">
-                    <div class="film-yvid1">
-                        <h1>
-                        </h1>
+								<div class="film-yvid-1">
+                    <div class="film-yvid-1-1">
                         <iframe src="https://www.youtube.com/embed/Ikdohtr2630" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -88,13 +86,13 @@
                   </div>
                 	</div>
 								</div>
-                <div class="film-yvids">
-                    <div class="film-yvid1">
+                <div class="film-yvid-2">
+                    <div class="film-yvid-2-1">
                         <h1>
                         </h1>
                         <iframe src="https://www.youtube.com/embed/bJ6HAl7D4jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="film-yvid2">
+                    <div class="film-yvid-2-2">
                         <a>
                         </a>
                         <iframe src="https://www.youtube.com/embed/rENvRBJOsyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -106,7 +104,7 @@
                 <a>PHOTOGRAPHY</a>
             </div>
             <div class="tcphotos">
-							<div class="images-text">
+								<div class="images-text">
                 <div class="images-title">
                     <a>Traveling California</a>
                     <img class="emoji" src="Photos/national-park_1f3de.png" alt="Emoji">
@@ -120,7 +118,7 @@
                     </div>
                 </div>
 							</div>
-              <div class="gridimages">
+              	<div class="gridimages">
                     <div class="grid-column">
                         <div class="grid-details">
                             <i class="fas fa-compass"></i>
@@ -178,10 +176,37 @@
                 </div>
             </div>
         </div>
+			</div>
     </div>
 
 
 <script>
+	var landingPage = 'index.html';
+
+	function updateNavStyle() {
+	if(landingPage.length > 0 && location.href.toLowerCase().indexOf(landingPage.toLowerCase()) >= 0) {
+		var offset = $('#change_color').offset();
+		var scroll_start = $(document).scrollTop();
+		if (scroll_start > offset.top) {
+			// the white normal navbar
+			$(".navbar-add").removeClass("navbar-trans");
+		} else {
+			// what the users sees when he lands on the page
+			$(".navbar-add").addClass("navbar-trans");
+		}
+	}
+	}
+
+	$(document).ready(function() {
+	var scroll_start = 0;
+	var change_color = $('#change_color');
+
+	if (change_color.length) {
+		$(document).scroll(updateNavStyle);
+		updateNavStyle(); // Note this.
+	}
+	});
+
 	function myFunction1() {
 		  var x = document.getElementById("dropmenu-content");
 		  if (x.style.display === "block") {
