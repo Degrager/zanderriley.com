@@ -17,18 +17,18 @@
 </head>
 
 <body>
-	<div id="navbar">
+	<div class="navbar">
 		<div class="navbar-container">
-			<img id="namelogo" src="Photos/ZanderRileyLogo(White).png" alt="Zander Riley">
+			<img class="namelogo" src="Photos/ZanderRileyLogo.png" alt="Zander Riley">
 			<div class="navbar-buttons">
-				<button id="home" onclick="scrollWin(0, 0)">HOME</button>
-				<button id="film" onclick="scrollWin(0, 705)">FILMMAKING</button>
-				<button id="photo" onclick="scrollWin(0, 3160)">PHOTOGRAPHY</button>
+				<a class="btn" id="home" href="#bigsur">HOME</a>
+				<a class="btn" id="film" href="#divider1" data-uk-smooth-scroll="{offset: -120}">FILMMAKING</a>
+				<a class="btn" id="photo" href="#divider2" >PHOTOGRAPHY</a>
 			</div>
 		</div>
   </div>
-  <div id="banner">
-		<div class="banner-container">
+  <div id="bigsur">
+		<div class="bigsur-container">
 			<img src="Photos/Driving.png" alt="Driving-Top">
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 		                    <h2>Filmamker / Photographer / PC Specialist</h2>
 												<p>ZANDRRILEY@GMAIL.COM</p>
 										</div>
-                    <div id="social">
+                    <div class="social">
 						            <a href="https://www.youtube.com/user/thedocx13" ><i class="fab fa-youtube"></i> </a>
 						            <a href="https://www.instagram.com/zandrriley/"><i class="fab fa-instagram"></i> </a>
 						            <a href="https://twitter.com/Degrager_Dev" ><i class="fab fa-twitter"></i> </a>
@@ -52,7 +52,7 @@
             <div id="divider1"></div>
             <div id="filmmaking-title">
                 <a>FILMMAKING</a>
-								<h1>2018 - 2020</h1>
+								<h1>2018-2020</h1>
             </div>
 						<div class="film">
 								<div class="film-text">
@@ -91,33 +91,31 @@
                     <div class="film-yvid-2-1">
                         <iframe src="https://www.youtube.com/embed/bJ6HAl7D4jI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-										<h1></h1>
                     <div class="film-yvid-2-2">
                         <iframe src="https://www.youtube.com/embed/rENvRBJOsyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-										<div id="photo-scroll"></div>
                 </div>
             </div>
 						<div id="divider2"></div>
 						<div id="photography-title">
                 <a>PHOTOGRAPHY</a>
-								<h1>2019-2020</h1>
             </div>
-          	<div class="tcphotos">
-							<div class="images-text">
-              	<div class="images-title">
+            <div class="tcphotos">
+								<div class="images-text">
+                <div class="images-title">
                     <a>Traveling California</a>
-              	</div>
-              	<div class="images-info">
-                  <div class="images-subtitle">
+                    <img class="emoji" src="Photos/national-park_1f3de.png" alt="Emoji">
+                </div>
+                <div class="images-info">
+                    <div class="images-subtitle">
                         <a><i class="far fa-compass"></i> San Francisco, CA - Joshua Tree, CA</a>
                     </div>
-                  <div class="images-date">
-                      <a><i class="far fa-calendar-alt"></i> June 18, 2019 - July 26, 2020</a>
-                  </div>
-              	</div>
+                    <div class="images-date">
+                        <a><i class="far fa-calendar-alt"></i> June 18, 2019 - July 26, 2020</a>
+                    </div>
+                </div>
 							</div>
-            	<div class="gridimages">
+              	<div class="gridimages">
                     <div class="grid-column">
                         <div class="grid-details">
                             <i class="fas fa-compass"></i>
@@ -125,16 +123,16 @@
                             <h2 class="grid-subtitle">San Francisco, CA</h2>
                         </div>
                         <div class="grid-overlay"></div>
-                      	<img class="grid-image" src="Photos/Bridge.jpg" alt="Bridge">
+                      	<img class="grid-image" src="Photos/Bridge.JPG" alt="Bridge">
                       	<div class="grid-details">
 																<i class="fas fa-compass"></i>
                             		<h1 class="grid-title">Goon Biking Trails</h1>
                             		<h2 class="grid-subtitle">Culver City, CA</h2>
                         		</div>
                         <div class="grid-overlay"></div>
-                        <img class="grid-image" src="Photos/Culver.jpg" alt="Culver">
-												<img class="grid-image" src= "Photos/Apple.jpg" alt="Joshua">
-												<img class="grid-image" src="Photos/Flag.jpg" alt="Flag">
+                        <img class="grid-image" src="Photos/Culver.png" alt="Culver">
+												<img class="grid-image" src= "Photos/Joshua.JPG" alt="Joshua">
+												<img class="grid-image" src="Photos/Flag.JPG" alt="Flag">
                   	</div>
                     <div class="grid-column">
                         <div class="grid-details">
@@ -149,10 +147,10 @@
                             <h2 class="grid-subtitle">Patterson, CA</h2>
                         </div>
                         <div class="grid-overlay"></div>
-                        <img class="grid-image" src="Photos/Driving.jpg" alt="Driving">
-												<img class="grid-image" src="Photos/Beach.jpg" alt="Beach">
-												<img class="grid-image" src="Photos/Alley.jpg" alt="Alley">
-												<img class="grid-image" src="Photos/BigBear.jpg" alt="Big Bear">
+                        <img class="grid-image" src="Photos/Driving.png" alt="Driving">
+												<img class="grid-image" src="Photos/Beach.JPG" alt="Beach">
+												<img class="grid-image" src="Photos/Alley.JPG" alt="Alley">
+												<img class="grid-image" src="Photos/BigBear.JPG" alt="Big Bear">
                     </div>
                     <div class="grid-column">
                       <div class="grid-details">
@@ -168,35 +166,59 @@
                           <h2 class="grid-subtitle">Santa Monica, CA</h2>
                       </div>
 											<div class="grid-overlay"></div>
-											<img class="grid-image" src="Photos/Promenade.jpg" alt="Promenade">
-											<img class="grid-image" src="Photos/Ghost.jpg" alt="Ghost">
-											<img class="grid-image" src="Photos/Clouds.jpg" alt="Clouds">
+											<img class="grid-image" src="Photos/Promenade.png" alt="Promenade">
+											<img class="grid-image" src="Photos/Ghost.JPG" alt="Ghost">
+											<img class="grid-image" src="Photos/Clouds.JPG" alt="Clouds">
 										</div>
-              </div>
+                </div>
             </div>
-					</div>
-		</div>
-	</div>
+        </div>
+			</div>
+    </div>
+
 
 <script>
+	var landingPage = 'index.html';
 
-function scrollWin(x, y) {
-  window.scrollTo(x, y);
-}
+	function updateNavStyle() {
+	if(landingPage.length > 0 && location.href.toLowerCase().indexOf(landingPage.toLowerCase()) >= 0) {
+		var offset = $('#change_color').offset();
+		var scroll_start = $(document).scrollTop();
+		if (scroll_start > offset.top) {
+			// the white normal navbar
+			$(".navbar-add").removeClass("navbar-trans");
+		} else {
+			// what the users sees when he lands on the page
+			$(".navbar-add").addClass("navbar-trans");
+		}
+	}
+	}
 
-window.onscroll = function() {scrollFunction()};
+	$(document).ready(function() {
+	var scroll_start = 0;
+	var change_color = $('#change_color');
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.height="120px";
-		document.getElementById("navbar").style.backgroundColor="rgba(5, 5, 6, 1)";
-		document.getElementById("namelogo").style.width="360px";
-  } else {
-    document.getElementById("navbar").style.height = "160px";
-		document.getElementById("navbar").style.backgroundColor="rgba(5, 5, 6, 0.8)";
-    document.getElementById("namelogo").style.width="420px";
-  }
-}
+	if (change_color.length) {
+		$(document).scroll(updateNavStyle);
+		updateNavStyle(); // Note this.
+	}
+	});
+
+	function myFunction1() {
+		  var x = document.getElementById("dropmenu-content");
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		function one() {
+		  document.getElementById("bridge-text")[0].style.opacity = "1";
+
+		var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
+		if (!touchsupport){ // browser doesn't support touch
+		    document.documentElement.className += " non-touch"
+		}
+	}
 
 </script>
 
