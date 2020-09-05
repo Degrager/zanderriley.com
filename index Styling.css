@@ -22,6 +22,7 @@
 /* Body */
 
 html {
+  background-color: black;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -50,7 +51,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: rgba(5, 5, 6, 0.8);
+  background-color: rgba(5, 5, 6, 0);
   position: fixed;
   transition: 0.3s ease;
   z-index: 99;
@@ -59,46 +60,75 @@ body {
   display: flex;
 }
 .navbar-container {
+  transition: 0.3s ease;
   width: 1100px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  padding: 0px 40px;
+}
+@media screen and (max-width: 1000px) {
+  .navbar-container {
+    transition: 0.3s ease;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
 }
 
 /* Zander Riley */
 
 #namelogo {
+  padding: 0px 0px;
   transition: 0.3s ease;
-  width: 420px;
+  width: 280px;
+}
+@@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 1100px) {
+  #namelogo {
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar-container {
+    padding: 0px 40px;
+  }
 }
 
 /* Dropdown Menu */
 .navbar-buttons {
+  white-space: nowrap;
 }
 .navbar-buttons button{
   font-family: Gilroy;
-  font-size: 24px;
+  font-size: 22px;
 	font-weight: 900;
 	text-decoration: none;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 3px solid white;
+  outline: none;
   box-sizing: border-box;
   margin-left: 5px;
-  padding: 15px 20px;
+  padding: 14px 20px;
 }
 .navbar-buttons button:hover {
 	color: white;
 	background-color: #151515;
   transition: 0.2s ease;
-  text-shadow: none;
+}
+@media screen and (max-width: 1100px) {
+  .navbar-buttons {
+    display: none;
+  }
 }
 
 /* Zander Riley */
 
 #banner {
-  height: 480px;
+  height: 540px;
 }
 .banner-container {
   position: fixed;
@@ -116,7 +146,7 @@ body {
   object-fit: cover;
   max-width: 1200px;
   width: 100%;
-  height: 480px;
+  height: 650px;
 }
 @media screen and (max-width: 705px) {
     .bigsur img {
@@ -399,7 +429,7 @@ body {
 /* Traveling California */
 .tcphotos {
   max-width: inherit;
-  padding: 0px 20px;
+  padding: 0px 8px;
 }
 .images-text {
   display: flex;
@@ -430,6 +460,7 @@ body {
 /* Image Grid */
 
 .gridimages {
+
     justify-content: center;
     display: grid;
     grid-area: gridimages;
@@ -552,4 +583,11 @@ body {
     .grid-details i{
         padding: 10px 8px 10px 8px;
     }
+}
+
+.images-bottomtext h1{
+  font-size: 16px;
+  padding: 15px 0px 30px 0px;
+  color: white;
+  text-align: center;
 }
