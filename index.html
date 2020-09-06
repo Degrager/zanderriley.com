@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" href="index Styling.css">
 <link rel="stylesheet" href="fonts/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -197,11 +197,9 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.height="120px";
 		document.getElementById("navbar").style.backgroundColor="rgba(5, 5, 6, 1)";
-		document.getElementById("namelogo").style.width="280px";
   } else {
     document.getElementById("navbar").style.height = "160px";
 		document.getElementById("navbar").style.backgroundColor="rgba(5, 5, 6, 0)";
-    document.getElementById("namelogo").style.width="280px";
   }
 }
 
