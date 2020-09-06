@@ -38,6 +38,11 @@ body {
   animation-fill-mode: forwards;
   height: 100%;
 }
+
+@media screen and (max-width: 414px) {
+
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -80,10 +85,11 @@ body {
 
 /* Zander Riley */
 #namelogo {
-  padding: 0px 0px;
+  padding-right: 10px;
   transition: 0.3s ease;
   width: 280px;
 }
+
 @media screen and (max-width: 414px) {
   #namelogo {
     width: 240px;
@@ -122,6 +128,7 @@ body {
 	background-color: #151515;
   transition: 0.2s ease;
 }
+
 @media screen and (max-width: 940px) {
   .navbar-buttons {
     display: none;
@@ -132,7 +139,7 @@ body {
 /* Menu */
 .navbar-mobilemenu-icon {
   display: none;
-  padding: 12px 0px;
+  padding: 12px 10px;
   color: white;
   transition: 0.2s ease;
 }
@@ -176,16 +183,24 @@ body {
   object-fit: cover;
   max-width: 1200px;
   width: 100%;
-  height: 650px;
+  height: 630px;
 }
+
 @media screen and (max-width: 414px) {
   #banner {
     height: 400px;
   }
   .banner-container img {
+    max-width: 414px;;
     height: 480px;
   }
 }
+@media screen and (max-width: 360px) {
+  .banner-container img {
+    max-width: 360px;
+  }
+}
+
 
 /* Lower Body */
 .lower-body {
@@ -206,8 +221,8 @@ body {
   padding: 0px 10px;
 }
 
-/* My Info */
 
+/* My Info */
 .myinfo{
   padding: 0px;
   white-space: nowrap;
@@ -244,17 +259,6 @@ body {
   font-weight: 800;
   font-size: 20px;
 }
-@media screen and (max-width: 360px) {
-  .myinfo-text h1 {
-    font-size: 12.85vw;
-  }
-  .myinfo-text h2 {
-    font-size: 3.15vw;
-  }
-  .myinfo-text p {
-    font-size: 2.85vw;
-  }
-}
 @media screen and (max-width: 414px) {
   .myinfo-text h1 {
     font-size: 12.85vw;
@@ -267,8 +271,8 @@ body {
   }
 }
 
-/* Social Icons */
 
+/* Social Icons */
 #social{
   text-align: center;
 }
@@ -302,15 +306,15 @@ body {
     color: #00acee;
 }
 
-/* Divider */
 
+/* Divider */
 #divider1 {
   border-top: 2px dashed grey;
   height: 2px;
 }
 
-/* Filmmaking title */
 
+/* Filmmaking title */
 #filmmaking-title {
   max-width: 1000px;
   text-align: center;
@@ -343,8 +347,8 @@ body {
     }
 }
 
-/* Film */
 
+/* Film */
 .film {
   margin-bottom: 55px;
   overflow: hidden;
@@ -386,7 +390,17 @@ body {
   font-weight: 800;
 }
 
+@media screen and (max-width: 700px){
+    .film-title {
+        font-size: 10vw;
+    }
+    .film-info {
+      font-size: 2.4vw;
+    }
+}
+
 /* Videos */
+
 
 /* Mountain Biking */
 .film-yvid-1 {
@@ -475,9 +489,9 @@ body {
   font-weight: 800;
   margin-top: -5px;
 }
-@media screen and (max-width: 560px){
-    .photography-title a {
-        font-size: 17.9vw;
+@media screen and (max-width: 700px){
+    #photography-title a {
+        font-size: 11.5vw;
     }
 }
 
@@ -511,6 +525,16 @@ body {
   font-size: 22px;
   font-weight: 800;
 }
+
+@media screen and (max-width: 700px){
+    .images-title {
+        font-size: 10vw;
+    }
+    .images-info {
+      font-size: 2.4vw;
+    }
+}
+
 
 /* Image Grid */
 
