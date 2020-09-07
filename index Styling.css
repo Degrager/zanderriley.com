@@ -125,7 +125,7 @@ body {
 /* Dropdown Menu */
 #navbar-buttons {
   transition: all 0.2s ease;
-  opacity: 0;
+  opacity: 1;
   outline: none;
   white-space: nowrap;
 }
@@ -150,10 +150,11 @@ body {
 
 @media screen and (max-width: 940px) {
   #navbar-buttons {
+    opacity: 0;
     display: none;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 940px) {
   #navbar-buttons {
     position: absolute;
     left: 0;
@@ -194,7 +195,7 @@ body {
 
 @media screen and (max-width: 940px) {
   .navbar-mobilemenu-icon {
-  display: block;
+    display: block;
   }
 }
 
