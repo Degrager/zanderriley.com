@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="index Styling.css">
 <link rel="stylesheet" href="fonts/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -22,9 +22,9 @@
 		<div class="navbar-container">
 			<img id="namelogo" src="Photos/ZanderRileyLogo(White).png" alt="Zander Riley">
 			<div id="navbar-buttons" href="javascript:void(0);" onclick="myFunction0()">
-				<button id="home" onclick="scrollWin(0, 0)">HOME</button>
-				<button id="film" onclick="scrollWin(0, 765)">FILMMAKING</button>
-				<button id="photo" onclick="scrollWin(0, 2740)">PHOTOGRAPHY</button>
+				<button id="home" onclick="scrollWin1()">HOME</button>
+				<button id="film" onclick="scrollWin2()">FILMMAKING</button>
+				<button id="photo" onclick="scrollWin3()">PHOTOGRAPHY</button>
 			</div>
 			<div class="navbar-mobilemenu-icon" href="javascript:void(0);" onclick="myFunction()">
 				<i id="icon" class="gg-menu-right-alt"></i>
@@ -187,8 +187,25 @@
 
 <script>
 
-function scrollWin(x, y) {
-  window.scrollTo(x, y);
+function scrollWin1() {
+  	window.scrollTo(0, 0);
+}
+function scrollWin2() {
+	if (window.innerWidth < 414) {
+  	window.scrollTo(0, 540);
+	}
+	else {
+  	window.scrollTo(0, 765);
+	}
+}
+
+function scrollWin3() {
+	if (window.innerWidth < 414) {
+  	window.scrollTo(0, 1580);
+	}
+	else {
+  	window.scrollTo(0, 2740);
+	}
 }
 
 window.onscroll = function() {scrollFunction()};
