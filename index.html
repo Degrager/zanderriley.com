@@ -21,12 +21,12 @@
 	<div id="navbar">
 		<div class="navbar-container">
 			<img id="namelogo" src="Photos/ZanderRileyLogo(White).png" alt="Zander Riley">
-			<div class="navbar-buttons">
+			<div id="navbar-buttons">
 				<button id="home" onclick="scrollWin(0, 0)">HOME</button>
 				<button id="film" onclick="scrollWin(0, 765)">FILMMAKING</button>
 				<button id="photo" onclick="scrollWin(0, 3220)">PHOTOGRAPHY</button>
 			</div>
-			<div class="navbar-mobilemenu-icon">
+			<div class="navbar-mobilemenu-icon" href="javascript:void(0);" onclick="myFunction()">
 				<i id="icon" class="gg-menu-right-alt"></i>
 			</div>
 		</div>
@@ -200,6 +200,17 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.height = "160px";
 		document.getElementById("navbar").style.backgroundColor="rgba(5, 5, 6, 0)";
+  }
+}
+
+function myFunction() {
+  var x = document.getElementById("navbar-buttons");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+		x.style.opacity = "0";
+  } else {
+    x.style.display = "block";
+		x.style.opacity = "1";
   }
 }
 

@@ -33,6 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  overflow-x: hidden;
   font-family: Gilroy;
 	margin: auto;
   animation: fadeInAnimation ease 1.5s;
@@ -45,9 +46,15 @@ body {
   html {
     max-width: 414px;
   }
+  body {
+    max-width: 414px;
+  }
 }
 @media screen and (max-width: 360px) {
   html {
+    max-width: 360px;
+  }
+  body {
     max-width: 360px;
   }
 }
@@ -116,10 +123,14 @@ body {
 }
 
 /* Dropdown Menu */
-.navbar-buttons {
+#navbar-buttons {
+  transition: all 0.2s ease;
+  opacity: 0;
+  outline: none;
   white-space: nowrap;
 }
-.navbar-buttons button{
+#navbar-buttons button{
+  transition: 0.2s ease;
   font-family: Gilroy;
   font-size: 22px;
 	font-weight: 900;
@@ -132,36 +143,53 @@ body {
   margin-left: 5px;
   padding: 14px 20px;
 }
-.navbar-buttons button:hover {
+#navbar-buttons button:hover {
 	color: white;
 	background-color: #151515;
-  transition: 0.2s ease;
 }
 
 @media screen and (max-width: 940px) {
-  .navbar-buttons {
+  #navbar-buttons {
     display: none;
   }
 }
-
+@media screen and (max-width: 414px) {
+  #navbar-buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 288px;
+  }
+  #navbar-buttons button {
+    display: block !important;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    border: none;
+  }
+}
 
 /* Menu */
 .navbar-mobilemenu-icon {
   display: none;
-  padding: 12px 10px;
-  color: white;
+  background-color: white;
+  padding: 21px;
+  border: 3px solid white;
+  border-radius: 3px;
   transition: 0.2s ease;
 }
 .navbar-mobilemenu-icon:hover {
+  background-color: #151515;
 }
 .navbar-mobilemenu-icon:hover #icon {
-  color: grey;
+  color: white;
 }
 #icon {
   transition: 0.2s ease;
-  transform: scale(2.5);
+  transform: scale(2.2);
   border-radius: 5px;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 940px) {
@@ -173,6 +201,7 @@ body {
 
 /* Zander Riley */
 #banner {
+  overflow: hidden;
   max-width: auto;
   height: 540px;
 }
@@ -213,6 +242,8 @@ body {
 
 /* Lower Body */
 .lower-body {
+  overflow: hidden;
+  position: static;
   background-color: #121214;
 }
 .lower-body-border {
@@ -225,6 +256,7 @@ body {
   0 0px 33px -7px rgba(0, 0, 0, 0.26);
 }
 .lower-body-container {
+  position: static;
   max-width: 1100px;
   margin: auto;
   padding: 0px 10px;
@@ -399,12 +431,12 @@ body {
   font-weight: 800;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1140px){
     .film-title {
-        font-size: 10vw;
+        font-size: 7vw;
     }
     .film-info {
-      font-size: 2.4vw;
+      font-size: 1.93vw;
     }
 }
 @media screen and (max-width: 414px) {
@@ -542,12 +574,12 @@ body {
   font-weight: 800;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1140px){
     .images-title {
-        font-size: 10vw;
+        font-size: 5.25vw;
     }
     .images-info {
-      font-size: 2.4vw;
+      font-size: 1.93vw;
     }
 }
 
