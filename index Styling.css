@@ -150,7 +150,6 @@ body {
 
 @media screen and (max-width: 940px) {
   #navbar-buttons {
-    opacity: 0;
     display: none;
   }
 }
