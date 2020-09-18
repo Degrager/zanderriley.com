@@ -197,16 +197,16 @@ function scrollWin1() {
 }
 function scrollWin2() {
 	if (window.innerWidth < 414) {
-  	window.scrollTo(0, 540);
+  	window.scrollTo(0, 590);
 	}
 	else {
-  	window.scrollTo(0, 765);
+  	window.scrollTo(0, 830);
 	}
 }
 
 function scrollWin3() {
 	if (window.innerWidth < 414) {
-  	window.scrollTo(0, 1580);
+  	window.scrollTo(0, 1680);
 	}
 	else {
   	window.scrollTo(0, 3200);
@@ -239,7 +239,9 @@ function myFunction0() {
 	var x = document.getElementById("navbar-buttons");
 	if (window.innerWidth < 940 ) {
 		x.style.display = "none";
-		x.style.opacity = "0";
+	}
+	else {
+		x.style.display = "block";
 	}
 }
 
