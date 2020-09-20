@@ -593,6 +593,7 @@ body {
 /* Image Grid */
 
 .gridimages {
+    padding: 10px;
     justify-content: center;
     display: grid;
     grid-area: gridimages;
