@@ -4,8 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, scale=1.0, user-scalable=no">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-<link rel=preload>
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="stylesheet" href="index Styling.css">
@@ -13,6 +11,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <link rel='stylesheet' href='https://css.gg/css'>
 <link rel="icon" type="image/png" sizes="32x32" href="Photos/favicon-32x32.png">
+
+<!-- animsition.css -->
+<link rel="stylesheet" href="../dist/css/animsition.min.css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script src="../dist/js/animsition.min.js"></script>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
 <title>Zander Riley</title>
 </head>
 
@@ -124,14 +132,14 @@
               	</div>
 							</div>
             	<div class="gridimages">
-                    <div class="grid-column">
+                    <div class="grid-column" class="animsition">
                         <div class="grid-details">
                             <i class="fas fa-compass"></i>
                             <h1 class="grid-title">Golden Gate Bridge</h1>
                             <h2 class="grid-subtitle">San Francisco, CA</h2>
                         </div>
                         <div class="grid-overlay"></div>
-                      	<img class="grid-image" src="Photos/Bridge.jpg" alt="Bridge">
+                      	<img class="grid-image" class="animsition-link" src="Photos/Bridge.jpg" alt="Bridge">
                       	<div class="grid-details">
 																<i class="fas fa-compass"></i>
                             		<h1 class="grid-title">Goon Biking Trails</h1>
@@ -191,27 +199,51 @@
 
 <script>
 
-
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-up-sm',
+    outClass: 'fade-out-up-sm',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
 
 function scrollWin1() {
   	window.scrollTo(0, 0);
 }
+
 function scrollWin2() {
-	if (window.innerWidth < 415) {
-  	window.scrollTo(0, 600);
-	}
-	else {
-  	window.scrollTo(0, 835);
-	}
+    var element = document.getElementById('divider1');
+    var headerOffset = 130;
+    var elementPosition = element.offsetTop;
+    var offsetPosition = elementPosition - headerOffset;
+    document.documentElement.scrollTop = offsetPosition;
+    document.body.scrollTop = offsetPosition; // For Safari
 }
 
 function scrollWin3() {
-	if (window.innerWidth < 415) {
-  	window.scrollTo(0, 1670);
-	}
-	else {
-  	window.scrollTo(0, 3290);
-	}
+    var element = document.getElementById('divider2');
+    var headerOffset = 130;
+    var elementPosition = element.offsetTop;
+    var offsetPosition = elementPosition - headerOffset;
+    document.documentElement.scrollTop = offsetPosition;
+    document.body.scrollTop = offsetPosition; // For Safari
 }
 
 window.onscroll = function() {scrollFunction()};
